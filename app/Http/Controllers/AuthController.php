@@ -47,7 +47,7 @@ class AuthController extends Controller
                 'user' => 'Неверный логин или пароль'
             ]);
         }
-        return redirect()->route('main.index');
+        return redirect()->route('crm.index');
     }
     public function userRegister(Request $request){
 

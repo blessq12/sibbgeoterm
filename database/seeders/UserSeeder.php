@@ -19,7 +19,8 @@ class UserSeeder extends Seeder
             'email' => 'root@sibgeo',
             'tel' => '+7 (999) 999-99-99',
             'password' => Hash::make('password'),
-            'active' => true
+            'active' => true,
+            'admin' => false
         ]);
     }
 }
