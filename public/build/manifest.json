@@ -1,0 +1,30 @@
+{
+  "resources/fonts/RoadRadio_Bold.woff": {
+    "file": "assets/RoadRadio_Bold-faa112b6.woff",
+    "src": "resources/fonts/RoadRadio_Bold.woff"
+  },
+  "resources/fonts/RoadRadio_Bold.woff2": {
+    "file": "assets/RoadRadio_Bold-d7cea1c7.woff2",
+    "src": "resources/fonts/RoadRadio_Bold.woff2"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-c1058c93.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  },
+  "resources/sass/auth/app.sass": {
+    "file": "assets/app-4ffd2c95.css",
+    "isEntry": true,
+    "src": "resources/sass/auth/app.sass"
+  },
+  "resources/sass/crm/app.sass": {
+    "file": "assets/app-9e38c319.css",
+    "isEntry": true,
+    "src": "resources/sass/crm/app.sass"
+  },
+  "resources/sass/front/app.sass": {
+    "file": "assets/app-28bf37e3.css",
+    "isEntry": true,
+    "src": "resources/sass/front/app.sass"
+  }
+}
