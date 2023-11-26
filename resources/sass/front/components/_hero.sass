@@ -1,0 +1,56 @@
+.hero-banner
+    height: 450px
+    position: relative
+    background: url('//via.placeholder.com/1920x1080')
+    background-position: center !important
+    background-repeat: no-repeat !important
+    background-size: cover !important
+    overflow: hidden
+    .main-offer
+        height: 240px
+        background: $color-blue
+        display: block
+        width: 60%
+        color: $color-white
+        padding: 12px
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        font-size: 2rem
+        text-decoration: none
+        font-weight: 600
+        font-family: roadradio
+        // transition: all .3s
+        opacity: .7
+        & span
+            -webkit-transition: none !important
+            -moz-transition: none !important
+            -o-transition: none !important
+            transition: none !important
+        &:hover
+            transform: skewX(20deg)
+            opacity: 1
+        &:hover span
+            transform: skewX(-20deg)
+        &.slug::after
+            content: ''
+            position: absolute
+            width: 300%
+            height: 100%
+            transform: translateX(100%)
+            right: 0
+            top: 0
+            background: $color-blue
+            display: block
+        &.construct::before
+            content: ''
+            position: absolute
+            width: 300%
+            height: 100%
+            transform: translateX(-100%)
+            left: 0
+            top: 0
+            background: $color-blue
+            display: block
+            

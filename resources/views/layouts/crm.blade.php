@@ -11,7 +11,18 @@
 <body>
     <div id="app">
         <x-crm.navbar></x-crm.navbar>
-        @yield('content')
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2">
+                    <x-crm.sidebar></x-crm.sidebar>
+                </div>
+                <div class="col-10 pt-4">
+                    <h3>@yield('title')</h3>
+                    <hr>
+                    @yield('content')
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

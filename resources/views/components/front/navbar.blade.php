@@ -11,8 +11,8 @@
                 <p class="mb-0">{{ $company->address }}</p>
                 <p class="mb-0">{{ $company->email }}</p>
             </div>
-            <div class="col-6 col-md-4 col-lg-4">
-                <ul class="nav-social">
+            <div class="col-6 col-md-4 col-lg-4 d-flex justify-content-end">
+                <ul class="nav-social mx-4">
                     <li>
                         <a href="{{ $company->waLink ? $company->waLink : 'javascript:void(0)' }}">
                             <i class="fa fa-whatsapp"></i>
@@ -24,7 +24,10 @@
                         </a>
                     </li>
                 </ul>
-                <div class="d-block">
+                <div class="d-flex flex-column">
+                    <button type="button" class="btn btn-outline-light btn-sm rounded border border-light">
+                        Заказать звонок
+                    </button>
                     <span>{{ $company->tel }}</span>
                 </div>
             </div>

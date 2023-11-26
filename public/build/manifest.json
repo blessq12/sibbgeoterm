@@ -18,12 +18,12 @@
     "src": "resources/sass/auth/app.sass"
   },
   "resources/sass/crm/app.sass": {
-    "file": "assets/app-9e38c319.css",
+    "file": "assets/app-0e9c50c3.css",
     "isEntry": true,
     "src": "resources/sass/crm/app.sass"
   },
   "resources/sass/front/app.sass": {
-    "file": "assets/app-28bf37e3.css",
+    "file": "assets/app-9cc89f1d.css",
     "isEntry": true,
     "src": "resources/sass/front/app.sass"
   }

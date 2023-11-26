@@ -5,7 +5,7 @@
     <div class="wrap">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-8 col-lg-6">
+                <div class="col-12 col-md-8 col-lg-4">
                     <h4>Регистрация</h4>
                     @if ($errors->any())
                         <div class="alert alert-danger">
