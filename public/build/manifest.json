@@ -13,17 +13,17 @@
     "src": "resources/js/app.js"
   },
   "resources/sass/auth/app.sass": {
-    "file": "assets/app-4ffd2c95.css",
+    "file": "assets/app-da809d7a.css",
     "isEntry": true,
     "src": "resources/sass/auth/app.sass"
   },
   "resources/sass/crm/app.sass": {
-    "file": "assets/app-0e9c50c3.css",
+    "file": "assets/app-1ebf9a50.css",
     "isEntry": true,
     "src": "resources/sass/crm/app.sass"
   },
   "resources/sass/front/app.sass": {
-    "file": "assets/app-5e11fe30.css",
+    "file": "assets/app-660cc605.css",
     "isEntry": true,
     "src": "resources/sass/front/app.sass"
   }
