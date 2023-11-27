@@ -2365,3 +2365,13 @@
 127.0.0.1 - - [28/Nov/2023:00:09:59 +0700] "GET /assets/images/banner.jpg HTTP/1.1" 304 -
 127.0.0.1 - - [28/Nov/2023:00:09:59 +0700] "GET /construct/angary HTTP/1.1" 200 8182
 127.0.0.1 - - [28/Nov/2023:00:10:00 +0700] "GET /assets/favicon/site.webmanifest HTTP/1.1" 200 576
+127.0.0.1 - - [28/Nov/2023:01:16:18 +0700] "GET /construct/angary HTTP/1.1" 200 8182
+127.0.0.1 - - [28/Nov/2023:01:16:18 +0700] "GET /assets/favicon/site.webmanifest HTTP/1.1" 200 576
+127.0.0.1 - - [28/Nov/2023:01:16:18 +0700] "GET /assets/images/banner.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [28/Nov/2023:01:16:41 +0700] "GET /construct/angary HTTP/1.1" 200 8182
+127.0.0.1 - - [28/Nov/2023:01:16:41 +0700] "GET /assets/images/logo.png HTTP/1.1" 304 -
+127.0.0.1 - - [28/Nov/2023:01:16:41 +0700] "GET /assets/images/banner.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [28/Nov/2023:01:16:44 +0700] "GET /assets/favicon/site.webmanifest HTTP/1.1" 200 576
+127.0.0.1 - - [28/Nov/2023:01:17:53 +0700] "GET /construct/angary HTTP/1.1" 200 8182
+127.0.0.1 - - [28/Nov/2023:01:17:55 +0700] "GET /build/assets/RoadRadio_Bold-d7cea1c7.woff2 HTTP/1.1" 200 24476
+127.0.0.1 - - [28/Nov/2023:01:17:55 +0700] "GET /assets/images/banner.jpg HTTP/1.1" 304 -

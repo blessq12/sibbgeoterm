@@ -29,14 +29,19 @@ export default{
                 
             </div>
             <div class="col-9 position-relative">
-                <ul class="carousel">
+                <ul class="carousel" ref="carousel">
                     <li v-for="slide in slides" :key="slide">
                         <div class="carousel-item bg-image" style="background: url('//via.placeholder.com/1024x1024');">
-                            <span class="text-danger">{{ slide }}</span>
+                            <span></span>
                         </div>
                     </li>
                 </ul>
-                <div class="overlay-right">
+                <div 
+                    class="overlay-right"
+                    @click="()=>{
+                        $refs.carousel.scrollLeft += 224
+                    }"
+                >
                     <i class="fa fa-arrow-right fa-2x"></i>
                 </div>
             </div>
@@ -65,6 +70,7 @@ export default{
     overflow-x: scroll
     padding: 24px 0
     margin: 0
+    scroll-behavior: smooth
     &::-webkit-scrollbar
         display: none    
     li
@@ -77,11 +83,15 @@ export default{
             height: 350px
             width: 200px
             background: $color-blue
+            border-radius: $default-radius
             span
                 display: block
-                font-size: 5rem
-                top: -55px
                 position: absolute
-                left: 10px
+                top: 12px
+                left: 12px
+                width: 40px
+                height: 20px
+                border-radius: $default-radius
+                background: $color-dark
                 font-family: roadradio
 </style>
