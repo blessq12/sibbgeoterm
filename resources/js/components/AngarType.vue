@@ -17,8 +17,8 @@ export default{
 <template>
 <div class="container">
             <div class="row mb-4">
-                <div class="col-12 text-center">
-                    <h3>Задачи и разновидностии ангаров</h3>
+                <div class="col-12">
+                    <h2 class="border-start border-danger border-5 px-4">Задачи и разновидностии ангаров</h2>
                 </div>
             </div>
             <div class="row placeholder-glow">
@@ -48,7 +48,7 @@ export default{
                             :key="item.id"
                             v-show="angarTypes.indexOf(item) === currentId"
                         >
-                            <h2 class="border-start border-5 border-danger px-4">{{ item.name }}</h2>
+                            <h2> <span class="text-danger">:</span> {{ item.name }}</h2>
                             <p>{{ item.excerpt }}</p>
                             <div class="row">
                                 <div class="col-6">

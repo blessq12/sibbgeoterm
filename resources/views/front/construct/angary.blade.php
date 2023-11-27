@@ -18,7 +18,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <h2>явные преимущества на рынке</h2>
+                    <h2 class="border-danger border-5 border-start px-2 mb-2">явные преимущества на рынке</h2>
                     <p>
                         Компания обладает материальнотехническим оснащением и квалифицированной бригадой мастеров, необходимыми для выполнения полученных заказов. 
                         Все работы осуществляются в соответствии с составленной сметой и условленными сроками.
@@ -35,14 +35,15 @@
                     @endphp
                     <ul class="list-unstyled p-0 m-0">
                         @foreach ($advantages as $item)
-                            <li class="border-danger border-5 border-start px-2 mb-2">
-                                <h6>{{ $item }}</h6>
+                            <li class="d-flex align-items center">
+                                <i class="fa fa-minus text-danger"></i>
+                                <h6 class="px-2">{{ $item }}</h6>
                             </li>
                         @endforeach
                     </ul>
                 </div>
                 <div class="col-12 col-md-6 placeholder-glow">
-                    <span class="img-fluid placeholder h-100 rounded w-100"></span>
+                    <img src="{{ asset('/assets/images/banner.jpg') }}" alt="" class="img-fluid rounded">
                 </div>
             </div>
         </div>
