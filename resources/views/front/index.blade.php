@@ -3,10 +3,6 @@
 @section('desc', 'Описание главной страницы')
 
 @section('content')
-<section>
-    <x-front.actual></x-front.actual>
-</section>
-<section>
     <div class="hero-banner bg-image" style="background: url({{ asset('/assets/images/banner.jpg') }})">
         <div class="container h-100">
             <div class="row h-100 align-items-center">

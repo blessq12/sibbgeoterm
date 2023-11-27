@@ -25,6 +25,8 @@ Route::controller(MainController::class)->name('main.')->group(function(){
 
     Route::controller(ConstructController::class)->prefix('construct')->name('construct.')->group(function(){
         Route::get('/', 'index')->name('index');
+        Route::get('/angary', 'angary')->name('angary');
+        Route::get('/sandwich', 'sandwich')->name('sandwich');
     });
     Route::controller(SlugController::class)->prefix('slug')->name('slug.')->group(function(){
         Route::get('/', 'index')->name('index');
