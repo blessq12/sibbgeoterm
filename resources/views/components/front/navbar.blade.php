@@ -2,10 +2,12 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-6 col-md-4 col-lg-4">
-                <div class="nav-logo">
-                    <img src="{{$company->logo}}" alt="" class="img-fluid">
-                    <span class="text-capitalize">{{ __('Строительная компания') }}</span>
-                </div>
+                <a href="{{ route('main.index') }}" rel="nofollow">
+                    <div class="nav-logo">
+                        <img src="{{$company->logo}}" alt="" class="img-fluid">
+                        <span class="text-capitalize">{{ __('Строительная компания') }}</span>
+                    </div>
+                </a>
             </div>
             <div class="col-md-4 col-lg-4 d-none d-md-block text-center">
                 <p class="mb-0">{{ $company->address }}</p>
