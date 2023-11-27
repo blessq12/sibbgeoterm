@@ -52,22 +52,6 @@
         <angar-type></angar-type>
     </section>
     <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-6 placeholder-glow">
-                    <span class="img-fluid placeholder h-100 rounded w-100"></span>
-                </div>
-                <div class="col-12 col-md-12 col-lg-6">
-                    <h3>Заголовок для ангаров</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolorem quos ex modi totam repellat deserunt recusandae libero fuga excepturi suscipit ea dolorum, placeat nesciunt eaque magnam veniam laudantium itaque!
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolorem quos ex modi totam repellat deserunt recusandae libero fuga excepturi suscipit ea dolorum, placeat nesciunt eaque magnam veniam laudantium itaque!
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora minima aliquid repudiandae nihil facere cupiditate corporis odio amet modi eligendi, quas possimus cum atque. Possimus culpa id ullam in asperiores!
-                    </p>
-                </div>
-            </div>
-        </div>
+        <angar-slider></angar-slider>
     </section>
 @endsection
