@@ -11,7 +11,7 @@
         </a>
         <a href="">
             <li>Отзывы</li>
-        </a>
+        </a>        
         <a href="{{ route('crm.users.index') }}">
             <li>Пользователи</li>
         </a>

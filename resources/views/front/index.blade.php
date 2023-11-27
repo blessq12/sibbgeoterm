@@ -7,7 +7,8 @@
     <x-front.actual></x-front.actual>
 </section>
 <section>
-    <div class="hero-banner py-4">
+    <div class="hero-banner py-4" style="background: url('{{ asset('/assets/images/banner.jpg') }}')">
+        <div class="overlay"></div>
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 col-md-6 col-lg-6 d-flex">
@@ -24,6 +25,7 @@
         </div>
     </div>
 </section>
+
 <section>
     <div class="container">
         <div class="row">
@@ -35,13 +37,41 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row mt-4">
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="wu-item overflow-hidden">
-                    
+                <div class="wu-item overflow-hidden" style="background: url('{{ asset('/assets/images/banner.jpg') }}')">
+                    <div class="overlay"></div>
+                    <div class="position-relative">
+                        <h4>Причина 1</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="wu-item overflow-hidden" style="background: url('{{ asset('/assets/images/banner.jpg') }}')">
+                    <div class="overlay"></div>
+                    <div class="position-relative">
+                        <h4>Причина 2</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="wu-item overflow-hidden" style="background: url('{{ asset('/assets/images/banner.jpg') }}')">
+                    <div class="overlay"></div>
+                    <div class="position-relative">
+                        <h4>Причина 3</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="wu-item overflow-hidden" style="background: url('{{ asset('/assets/images/banner.jpg') }}')">
+                    <div class="overlay"></div>
+                    <div class="position-relative">
+                        <h4>Причина 4</h4>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 @endsection
