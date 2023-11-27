@@ -4,27 +4,16 @@
 @section('desc', 'Описание для сендвич панелей')
 
 @section('content')
-    <div class="container-fluid bg-image position-relative" style="height: 500px; background: url({{ asset('/assets/images/banner.jpg') }})">
-        <div class="overlay" style="background: rgba(0, 0, 0, .7)"></div>
-        <div class="container h-100 py-5 position-relative">
-            <div class="position-absolute"
-            style="background: #fff;
-            width:350px;
-            height:50px;
-            right: 12px;
-            bottom: -1px
-        "></div>
-            <div class="row align-items-end h-100">
-                <div class="col-12">
-                    <h1 class="px-4 border-danger border-start border-5 text-light"
-                        style="font-size: 5rem; width: 90%"
-                    >
-                        Сооружения из сендвич панелей
-                    </h1>
-                </div>
-            </div>
-        </div>
-    </div>
+
+    <x-front.page-banner
+        background="{{ asset('/assets/images/banner.jpg') }}"
+        title="Сооружения из сендвич панелей"
+    >
+        <a href="javascript:void(0)" class="btn btn-outline-light btn-lg">
+            Оставить заявку сейчас
+        </a>
+    </x-front.page-banner>
+
     <section>
         <div class="container">
             <div class="row mb-4">

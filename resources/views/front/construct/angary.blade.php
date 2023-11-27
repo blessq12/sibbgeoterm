@@ -4,49 +4,41 @@
 @section('desc','Описание для ангаров арочного типа')
 
 @section('content')
-    <div class="container-fluid bg-image position-relative" style="height: 500px; background: url({{ asset('/assets/images/banner.jpg') }})">
-        <div class="overlay" style="background: rgba(0, 0, 0, .7)"></div>
-        <div class="container position-relative h-100 py-5">
-            <div class="position-absolute"
-            style="background: #fff;
-            width:350px;
-            height:50px;
-            right: 12px;
-            bottom: -1px
-        "></div>
-            <div class="row align-items-end h-100">
-                <div class="col-12">
-                    <div class="header text-light border-start border-danger border-5 px-4">
-                        <h1 style="font-size: 5rem; width: 90%">Строиттельство ангаров арочного типа</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <x-front.page-banner 
+        background="{{ asset('/assets/images/banner.jpg') }}"
+        title="Строительство ангаров арочного типа"
+    >
+    <div class="d-flex">
+        <a href="javascript:void(0)" class="btn btn-outline-light btn-lg">
+            Оставить заявку сейчас
+        </a>
     </div>
+    </x-front.page-banner>
     <section>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <h2>Почему выбирают нас:</h2>
+                    <h2>явные преимущества на рынке</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptas nisi illo reiciendis eius repellat perspiciatis omnis odit neque ipsa animi distinctio amet, voluptate quia debitis ad perferendis exercitationem dolore.
+                        Компания обладает материальнотехническим оснащением и квалифицированной бригадой мастеров, необходимыми для выполнения полученных заказов. 
+                        Все работы осуществляются в соответствии с составленной сметой и условленными сроками.
                     </p>
+                    @php
+                        $advantages = [
+                            'мы постоянно совершенствуем технологический процесс',
+                            'используем современное оборудование',
+                            'только качественные материалы',
+                            'соблюдение строгих стандартов производства и высокой квалификации сотрудников',
+                            'На все виды работ компанией получены свидетельства лицензии и сертификаты',
+                            'гарантийное и послегарантийное обслуживание на выполненных объектах',
+                        ];
+                    @endphp
                     <ul class="list-unstyled p-0 m-0">
-                        <li class="border-danger border-5 border-start px-2 mb-2">
-                            <h4>Какая то причина 1</h4>
-                        </li>
-                        <li class="border-danger border-5 border-start px-2 mb-2">
-                            <h4>Какая то причина 1</h4>
-                        </li>
-                        <li class="border-danger border-5 border-start px-2 mb-2">
-                            <h4>Какая то причина 1</h4>
-                        </li>
-                        <li class="border-danger border-5 border-start px-2 mb-2">
-                            <h4>Какая то причина 1</h4>
-                        </li>
-                        <li class="border-danger border-5 border-start px-2 mb-2">
-                            <h4>Какая то причина 1</h4>
-                        </li>
+                        @foreach ($advantages as $item)
+                            <li class="border-danger border-5 border-start px-2 mb-2">
+                                <h6>{{ $item }}</h6>
+                            </li>
+                        @endforeach
                     </ul>
                 </div>
                 <div class="col-12 col-md-6 placeholder-glow">
@@ -56,21 +48,7 @@
         </div>
     </section>
     <section>
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-12 text-center">
-                    <h3>Задачи и разновидностии ангаров</h3>
-                </div>
-            </div>
-            <div class="row placeholder-glow">
-                <div class="col-6 col-md-4 col-lg-2"><div class="angar-type placeholder rounded" style="width:100%; height: 100px"></div></div>
-                <div class="col-6 col-md-4 col-lg-2"><div class="angar-type placeholder rounded" style="width:100%; height: 100px"></div></div>
-                <div class="col-6 col-md-4 col-lg-2"><div class="angar-type placeholder rounded" style="width:100%; height: 100px"></div></div>
-                <div class="col-6 col-md-4 col-lg-2"><div class="angar-type placeholder rounded" style="width:100%; height: 100px"></div></div>
-                <div class="col-6 col-md-4 col-lg-2"><div class="angar-type placeholder rounded" style="width:100%; height: 100px"></div></div>
-                <div class="col-6 col-md-4 col-lg-2"><div class="angar-type placeholder rounded" style="width:100%; height: 100px"></div></div>
-            </div>
-        </div>
+        <angar-type></angar-type>
     </section>
     <section>
         <div class="container">
