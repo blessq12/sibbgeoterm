@@ -1,7 +1,14 @@
 <script>
 export default{
     data:()=>({
-        slides: [1,2,3,4,5,6,7,8,9]
+        slides: [
+            {id: 1, image: '/assets/portfolio/1.jpg'},
+            {id: 2, image: '/assets/portfolio/2.jpg'},
+            {id: 3, image: '/assets/portfolio/1.jpg'},
+            {id: 4, image: '/assets/portfolio/2.jpg'},
+            {id: 5, image: '/assets/portfolio/1.jpg'},
+            {id: 6, image: '/assets/portfolio/2.jpg'},
+        ]
     })
 }
 </script>
@@ -30,19 +37,27 @@ export default{
             </div>
             <div class="col-9 position-relative">
                 <ul class="carousel" ref="carousel">
-                    <li v-for="slide in slides" :key="slide">
-                        <div class="carousel-item bg-image" style="background: url('//via.placeholder.com/1024x1024');">
-                            <span></span>
+                    <li v-for="slide in slides" :key="slide" >
+                        <div class="carousel-item bg-image" :style="'background: url('+ slide.image +')'">
+                            <span class="badge bg-dark">Badge</span>
                         </div>
                     </li>
                 </ul>
                 <div 
-                    class="overlay-right"
+                    class="nav-arrow right"
                     @click="()=>{
-                        $refs.carousel.scrollLeft += 224
+                        $refs.carousel.scrollLeft += 474
                     }"
                 >
                     <i class="fa fa-arrow-right fa-2x"></i>
+                </div>
+                <div 
+                    class="nav-arrow left"
+                    @click="()=>{
+                        $refs.carousel.scrollLeft -= 474
+                    }"
+                >
+                    <i class="fa fa-arrow-left fa-2x"></i>
                 </div>
             </div>
         </div>
@@ -50,7 +65,7 @@ export default{
 </template>
 
 <style lang="sass" scoped>
-.overlay-right
+.nav-arrow
     cursor: pointer
     position: absolute
     display: flex
@@ -58,9 +73,13 @@ export default{
     justify-content: center
     width: 100px
     height: 100%
-    right: 0
     top: 0 !important
-    background: linear-gradient(90deg, rgba(2,0,36,0) 0%, $color-dark 100%)
+    &.right
+        background: linear-gradient(90deg, rgba(2,0,36,0) 0%, $color-dark 100%)
+        right: 0
+    &.left
+        background: linear-gradient(270deg, rgba(2,0,36,0) 0%, $color-dark 100%)
+        left: 0
 
 .carousel
     list-style: none
@@ -75,23 +94,13 @@ export default{
         display: none    
     li
         margin-right: 24px
-        
         .carousel-item
             position: relative
+            padding: 12px
             display: block
             min-height: 350px
-            height: 350px
-            width: 200px
+            width: 450px
+            height: 200px
             background: $color-blue
             border-radius: $default-radius
-            span
-                display: block
-                position: absolute
-                top: 12px
-                left: 12px
-                width: 40px
-                height: 20px
-                border-radius: $default-radius
-                background: $color-dark
-                font-family: roadradio
 </style>

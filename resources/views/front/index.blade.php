@@ -3,7 +3,7 @@
 @section('desc', 'Описание главной страницы')
 
 @section('content')
-    <div class="hero-banner bg-image" style="background: url({{ asset('/assets/images/banner.jpg') }})">
+    <div class="hero-banner bg-image" style="background: url({{ asset('/assets/portfolio/1.jpg') }})">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12 col-md-6">

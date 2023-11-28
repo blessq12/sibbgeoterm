@@ -42,19 +42,21 @@ export default{
         </div>
     </div>
     <div class="row">
-        <div class="col-12 col-lg-8 overflow-hidden">
-            <transition-group
-                tag="div"
-                class="angar-images position-relative rounded"
-                duration="400"
-                enter-active-class="animate__animated animate__fadeInUp"
-                leave-active-class="animate__animated animate__fadeOut"
-            >
-                <div class="image-item position-absolute " style="top: 0;" v-for="angar in angarSizes" :key="angar.id" v-show="currentId == angarSizes.indexOf(angar)">
-                    <img :src="angar.image" alt="" class="img-fluid">
-                </div>
-            </transition-group>
-            <img src="/assets/images/angars/h6.jpg" alt="" class="img-fluid invisible">
+        <div class="col-12 col-lg-8">
+            <div class="overflow-hidden">
+                <transition-group
+                    tag="div"
+                    class="angar-images position-relative rounded"
+                    duration="400"
+                    enter-active-class="animate__animated animate__fadeIn"
+                    leave-active-class="animate__animated animate__fadeOut"
+                >
+                    <div class="image-item position-absolute " style="top: 0;" v-for="angar in angarSizes" :key="angar.id" v-show="currentId == angarSizes.indexOf(angar)">
+                        <img :src="angar.image" alt="" class="img-fluid">
+                    </div>
+                </transition-group>
+                <img src="/assets/images/angars/h6.jpg" alt="" class="img-fluid invisible">
+            </div>
         </div>
         <div class="col-12 col-lg-4 overflow-hidden">
             <transition-group

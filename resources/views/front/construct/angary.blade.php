@@ -5,7 +5,7 @@
 
 @section('content')
     <x-front.page-banner 
-        background="{{ asset('/assets/images/banner.jpg') }}"
+        background="{{ asset('/assets/portfolio/2.jpg') }}"
         title="Строительство ангаров арочного типа"
     >
     <div class="d-flex">
@@ -43,7 +43,14 @@
                     </ul>
                 </div>
                 <div class="col-12 col-md-6 placeholder-glow">
-                    <img src="{{ asset('/assets/images/banner.jpg') }}" alt="" class="img-fluid rounded">
+                    <div class="h-100 overflow-hidden d-flex position-relative rounded">
+                        <img 
+                            src="{{ asset('/assets/portfolio/1.jpg') }}" 
+                            alt="" 
+                            style="align-self: center"
+                            class="img-fluid position-absolute "
+                        >
+                    </div>
                 </div>
             </div>
         </div>
