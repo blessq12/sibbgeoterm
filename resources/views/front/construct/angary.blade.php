@@ -52,6 +52,81 @@
         <angar-type></angar-type>
     </section>
     <section>
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h2 class="border-5 border-start border-danger px-4">
+                            Этапы работы над проектом
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="border border-light border-2 rounded p-4 h-100 d-flex align-items-center bg-light text-dark">
+                        <div>
+                            <h3 class="border-start border-danger border-5 px-4">
+                                Проектирование
+                            </h3>
+                            <p>
+                                На основе задач, которые стоят перед сооружением, с учетом планируемых затрат и требований, мы спроектируем вам проект объекта.
+                                Такой проект позволит подобрать оптимальные материалы, рассчитать цену и определить срок строительства сооружения
+                            </p>
+                            <p class="text-opacity-50 text-dark">
+                                Технология позволяет внести изменения в проект даже на этапе строительства и, 
+                                например, увеличить длину ангара, создать новые отверстия под окна, двери, ворота и переходы.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="row flex-column w-100">
+                        <div class="col mb-4">
+                            <div class="border border-2 rounded border-light p-3">
+                                <h3 class="border-start border-danger border-5 px-4">
+                                    Строительство
+                                </h3>
+                                <ul class="m-0">
+                                    <li>Фундамент с закладными элементами</li>
+                                    <li>Изготовление арок для ангара</li>
+                                    <li>Возведение и монтаж арочной конструкции</li>
+                                    <li>Возведение и монтаж арочной конструкции</li>
+                                    <li>Монтаж торцевых стен</li>
+                                    <li>Утепление ангара</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="border border-2 rounded border-light p-3">
+                                <h3 class="border-start border-danger border-5 px-4">
+                                    Проводимые работы
+                                </h3>
+                                <div class="row">
+                                    <div class="col-6 mb-4">
+                                        Проводится монтаж оборудования и чистовая отделка сооружения.
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        Монтируются узлы системы автоматики, управляющие и исполнительные устройства.
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        Проводятся другие работы предусмотренные техническим заданием (например, подвод водоснабжения, установка холодильного оборудования).
+                                    </div>
+                                    <div class="col-6 mb-4">
+                                        Производится пуско-накладка системы в целом, которая включает регулировку и настройку.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <angar-sizes></angar-sizes>
+    </section>
+    <section>
         <angar-slider></angar-slider>
     </section>
 @endsection
