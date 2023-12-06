@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('tel');
             $table->string('email');
             $table->string('address');
+            $table->text('navigator');
             $table->string('waLink')->nullable();
             $table->string('tgLink')->nullable();
             $table->timestamps();

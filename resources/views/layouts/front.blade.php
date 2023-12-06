@@ -16,6 +16,7 @@
         @auth
             <x-crm.topbar></x-crm.topbar>
         @endauth
+        <x-front.topbar></x-front.topbar>        
         <x-front.navbar></x-front.navbar>
         @yield('content')
         {{-- <x-front.footer></x-front.footer> --}}

@@ -1,6 +1,7 @@
 @import '../variables'
 
 @import 'components/topbar'
+@import 'components/top-bar'
 @import 'components/navbar'
 @import 'components/hero'
 @import 'components/page-banner'
@@ -8,13 +9,45 @@
 
 section
     padding: 48px 0
-.overlay    
-        position: absolute
-        top: 0
-        left: 0
-        width: 100%
-        height: 100%
-        background: rgba(0, 0, 0, .3)
+
+.section-title
+    border-left: 5px solid $color-red
+    padding-left: 12px
+ul
+    list-style: none
+    padding: 0
+    margin: 0
+    li
+        &.before::before
+            content: '-'
+            margin-right: 6px
+            color: $color-red
+.form-group
+    label
+        font-weight: 400
+    select
+        background: transparent
+        color: $color-white
+        border: unset
+        border-bottom: 2px solid $color-red
+        border-radius: 0
+        padding: 0
+        padding: 12px 0
+        &:focus
+            box-shadow: unset
+            border-color: $color-white
+    .form-control
+        background: transparent
+        border: unset
+        border: 2px solid $color-red
+        color: $color-white
+        border-radius: 0
+        transition: all .3s
+        &:focus
+            border: 2px solid $color-white !important
+            box-shadow: unset !important
+
+        
 
 .wu-item
     background: $color-blue

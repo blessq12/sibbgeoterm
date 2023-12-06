@@ -7,6 +7,8 @@ $color-dark: #1a1a1a
 $color-yellow: #e9ca37
 $color-white: #f5ede5
 
+$bg-overlay: rgba(0, 0, 0, .7)
+
 // radius
 $default-radius: 10px
 
@@ -32,3 +34,15 @@ body
 
 h1, h2, h3, h4, h5, h6
     font-family: RoadRadio
+
+.roadradio
+    font-family: RoadRadio !important
+a
+    color: $color-white
+    transition: all .3s
+    &:hover
+        color: $color-red
+    &.roadradio
+        line-height: 1 !important
+.text-red
+    color: $color-red !important

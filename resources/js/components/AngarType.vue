@@ -18,7 +18,10 @@ export default{
 <div class="container">
             <div class="row mb-4">
                 <div class="col-12">
-                    <h2 class="border-start border-danger border-5 px-4">Задачи и разновидностии ангаров</h2>
+                    <div class="section-title">
+                        <h2>Задачи и разновидностии ангаров</h2>
+                    </div>
+
                 </div>
             </div>
             <div class="row placeholder-glow">

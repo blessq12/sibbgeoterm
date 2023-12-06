@@ -17,11 +17,7 @@ export default{
     <div class="container">
         <div class="row mb-4">
             <div class="col-12">
-                <div class="section-title">
-                    <div class="section-title">
-                        <h2 class="border-start border-5 border-danger px-4">Готовые проекты</h2>
-                    </div>
-                </div>
+                <h2 class="section-title">Готовые проекты</h2>
             </div>
         </div>
         <div class="row">

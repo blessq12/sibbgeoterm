@@ -22,6 +22,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::controller(MainController::class)->name('main.')->group(function(){
     Route::get("/", 'index')->name('index');
+    Route::get('/about', 'about')->name('about');
+    Route::get('/contact', 'contact')->name('contact');
 
     Route::controller(ConstructController::class)->prefix('construct')->name('construct.')->group(function(){
         Route::get('/', 'index')->name('index');
@@ -30,7 +32,7 @@ Route::controller(MainController::class)->name('main.')->group(function(){
     });
     Route::controller(SlugController::class)->prefix('slug')->name('slug.')->group(function(){
         Route::get('/', 'index')->name('index');
-    }); 
+    });
 });
 
 Route::middleware('auth')->group(function(){

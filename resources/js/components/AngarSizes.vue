@@ -17,11 +17,7 @@ export default{
 <div class="container">
     <div class="row mb-4">
         <div class="col-12">
-            <div class="section-title">
-                <h2 class="border-5 border-start border-danger px-4">
-                    Размеры ангаров
-                </h2>
-            </div>
+            <h2 class="section-title">Размеры ангаров</h2>
         </div>
     </div>
     <div class="row mb-4">

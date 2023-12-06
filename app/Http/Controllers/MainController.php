@@ -14,4 +14,15 @@ class MainController extends Controller
             'company' => Company::first()
         ]);
     }
+
+    public function about(){
+        return view('front.about',[
+            'company' => Company::first()
+        ]);
+    }
+    public function contact(){
+        return view('front.contact',[
+            'company' => Company::first()
+        ]);
+    }
 }

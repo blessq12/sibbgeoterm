@@ -1,38 +1,35 @@
 nav
     padding: 24px 0
-    background: $color-blue
-    color: $color-white
+    background: rgba(0, 0, 0, .8)
+    position: sticky
+    top: 0
+    width: 100%
+    z-index: 10
+    height: 100px
+    white-space: nowrap
+    h4
+        margin-bottom: 0
+    p
+        margin-bottom: 0
+        font-size: .85rem
+    a
+        text-decoration: none
+        color: $color-white
     .nav-logo
         display: flex
         align-items: center
+        justify-content: start
         img
-            height: 35px
+            max-height: 45px
             margin-right: 12px
-        span
-            font-family: roadradio
-            font-size: 1rem
-    .nav-social
-        display: flex
-        align-items: center
-        list-style: none
-        padding: 0
-        margin: 0
+    ul.nav
         li
-            margin-right: 12px
-            &:last-child
-                    margin-right: 0
+            margin: 0 6px
             a
-                text-decoration: none
                 color: $color-white
-                font-size: 1.3rem
-                padding: 6px 12px
-                border: 1px solid $color-white
-                border-radius: $default-radius
-                transition: .3s
-                i
-                    transition: all .3s
+                border-bottom: 2px solid transparent
+                &.active
+                    border-bottom: 2px solid $color-red
                 &:hover
-                    background: $color-white
-                &:hover i
-                    color: $color-blue
-                
+                    color: $color-white
+                    border-bottom: 2px solid $color-white
