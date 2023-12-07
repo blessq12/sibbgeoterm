@@ -20,7 +20,7 @@
             </li>
         </ul>
     </x-front.page-banner>
-    <section class="pt-0">
+    <section>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-4">
@@ -99,11 +99,13 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-8">
-                    <div class="row">
+                    <div class="row mb-4">
                         <div class="col-12 mb-4">
                             <h2 class="section-title mb-4">посетите наш офис в томске</h2>
                             <div class="rounded" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/sibgeoterm/65006678309/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Сибгеотерм</a><a href="https://yandex.ru/maps/67/tomsk/category/construction_company/184107633/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Строительная компания в Томске</a><a href="https://yandex.ru/maps/67/tomsk/category/construction_and_finishing_works/184107547/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Строительные и отделочные работы в Томске</a><iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=84.960378%2C56.458641&mode=search&oid=65006678309&ol=biz&z=16.65" width="100%" height="400" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-12">
                             <h2 class="section-title">Напишите нам</h2>
                             <p>МОжете воспользоваться формой для связи с нами, мы обрабатываем все письма</p>
