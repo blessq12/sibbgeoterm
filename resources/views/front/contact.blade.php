@@ -49,6 +49,53 @@
                     </div>
                     <div class="border border-light p-4 mb-4">
                         <h5 class="mb-4 fs-3 section-title">График работы</h5>
+                        <ul>
+                            <li class="d-flex justify-content-between">
+                                <span class="roadradio">Понедельник</span>
+                                <span class="roadradio text-red">с 9:00 до 18:00</span>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <span class="roadradio">Вторник</span>
+                                <span class="roadradio text-red">с 9:00 до 18:00</span>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <span class="roadradio">Среда</span>
+                                <span class="roadradio text-red">с 9:00 до 18:00</span>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <span class="roadradio">Четверг</span>
+                                <span class="roadradio text-red">с 9:00 до 18:00</span>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <span class="roadradio">Пятница</span>
+                                <span class="roadradio text-red">с 9:00 до 18:00</span>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <span class="roadradio">Суббота</span>
+                                <span class="roadradio text-red">Выходной</span>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <span class="roadradio">Воскресенье</span>
+                                <span class="roadradio text-red">Выходной</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="border border-light p-4 mb-4">
+                        <h5 class="mb-4 fs-3 section-title">Данные организации</h5>
+                        <ul>
+                            <li class="d-flex justify-content-between">
+                                <span class="roadradio">ИНН</span>
+                                <span class="roadradio text-red"> {{ $company->legal->inn }}</span>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <span class="roadradio">ОГРН</span>
+                                <span class="roadradio text-red"> {{ $company->legal->ogrn }}</span>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <span class="roadradio">КПП</span>
+                                <span class="roadradio text-red"> {{ $company->legal->kpp }}</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-12 col-lg-8">
