@@ -71,4 +71,30 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h2 class="section-title">
+                        Отзывы и награды
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ul class="d-flex">
+                        <li style="margin-right:24px">
+                            <img src="{{ asset('/assets/images/certificate.png') }}" alt="" class="img-fluid">
+                        </li>
+                        <li style="margin-right:24px">
+                            <img src="{{ asset('/assets/images/pismo.png') }}" alt="" class="img-fluid">
+                        </li>
+                        <li style="margin-right:24px">
+                            <img src="{{ asset('/assets/images/pismo-2.png') }}" alt="" class="img-fluid">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
