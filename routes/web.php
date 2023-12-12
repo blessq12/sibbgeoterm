@@ -31,7 +31,8 @@ Route::controller(MainController::class)->name('main.')->group(function(){
         Route::get('/sandwich', 'sandwich')->name('sandwich');
     });
     Route::controller(SlugController::class)->prefix('slug')->name('slug.')->group(function(){
-        Route::get('/', 'index')->name('index');
+        Route::get('/', 'publicIndex')->name('index');
+        Route::get('/{slug}', 'singleSlug')->name('single-slug');
     });
 });
 
@@ -41,6 +42,7 @@ Route::middleware('auth')->group(function(){
         Route::resource('companies', CompanyController::class);
         Route::patch('/users/active/{id}', [UserController::class, 'active'])->name('users.active');
         Route::resource('users', UserController::class);
+        Route::resource('slugs', SlugController::class);
     }); 
 });
 

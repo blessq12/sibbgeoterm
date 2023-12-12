@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('uri')->unique();
             $table->string('name')->default('Заголовок не назначен');
-            $table->string('desc')->default('Описание не задано');
+            $table->string('desc')->default('Описание не задано')->nullable();
             $table->boolean('status')->default(true);
-            $table->string('price')->default('99.9');
+            $table->string('view')->nullable();
             $table->timestamps();
         });
     }
