@@ -19,7 +19,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+Route::get('info', function(){
+    phpinfo();
+});
 Route::controller(MainController::class)->name('main.')->group(function(){
     Route::get("/", 'index')->name('index');
     Route::get('/about', 'about')->name('about');
