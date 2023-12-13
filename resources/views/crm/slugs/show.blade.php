@@ -28,6 +28,8 @@
                 @endif
             </div>
         </div>
+        @if (!$slug->images->isEmpty())
+            
         <div class="row row-cols-1 row-cols-md-2 mt-4">
             <div class="col">
                 <img src="/{{ $slug->imagesFull[0]->path }}" alt="" class="img-fluid">
@@ -37,6 +39,7 @@
                 {{ $slug->imagesThumb[0]->path }}
             </div>
         </div>
+        @endif
     </div>
     
 @endsection
