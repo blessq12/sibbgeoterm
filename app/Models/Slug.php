@@ -13,11 +13,8 @@ class Slug extends Model
     public function images(){
         return $this->morphMany(Image::class, 'image');
     }
-    public function imagesFull(){
-        return $this->morphMany(Image::class, 'image')->where('type', 'original');
-    }
-    public function imagesThumb(){
-        return $this->morphMany(Image::class, 'image')->where('type', 'thumb');
-    }
 
+    public function thumb(){
+        return $this->morphOne(Image::class, 'image');
+    }
 }

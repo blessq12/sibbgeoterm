@@ -80,6 +80,8 @@ class SlugController extends Controller
         Image::make($request->file('image'))->resize(1080, null, fn ($img) => $img->aspectRatio())->save('assets/uploads/' . $fileName);
         Image::make($request->file('image'))->resize(600, null, fn ($img) => $img->aspectRatio())->save('assets/uploads/' . 'thumb-' . $fileName);
         
+        $slug->images()->each(fn ($image) => $image->delete());
+
         $slug->images()->createMany([
             ['type' => 'original', 'path' => 'assets/uploads/' . $fileName],
             ['type' => 'thumb', 'path' => 'assets/uploads/' . 'thumb-' . $fileName],
