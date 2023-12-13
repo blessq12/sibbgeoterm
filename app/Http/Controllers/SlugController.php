@@ -74,15 +74,19 @@ class SlugController extends Controller
      * upload and resize image of specified resource
      */
     public function uploadImage(Request $request){
+        $slug = Slug::findOrFail($request->slugId);
+        $fileName = 'slug-' .$slug->uri . '.' . $request->file('image')->getClientOriginalExtension();
 
-        $name = 'thumb-' . $request->file('image')->getFilename() . '.' . $request->file('image')->getClientOriginalExtension() ;
-        $request->file('image')->storeAs('public/assets/uploads', $name);
-
-        Image::make('assets/uploads/'. $name)->resize(720, null, function($file){
-            $file->aspectRatio();
-        })->save('assets/uploads/' .$name, 60);
+        Image::make($request->file('image'))->resize(1080, null, fn ($img) => $img->aspectRatio())->save('assets/uploads/' . $fileName);
+        Image::make($request->file('image'))->resize(600, null, fn ($img) => $img->aspectRatio())->save('assets/uploads/' . 'thumb-' . $fileName);
         
-        return back()->with('image', '/assets/uploads/' .$name);
+        $slug->images()->createMany([
+            ['type' => 'original', 'path' => 'assets/uploads/' . $fileName],
+            ['type' => 'thumb', 'path' => 'assets/uploads/' . 'thumb-' . $fileName],
+        ]);
+
+        return back();
+
     }
     /**
      * Show the form for editing the specified resource.
