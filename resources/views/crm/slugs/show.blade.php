@@ -23,23 +23,9 @@
                 </form>
             </div>
             <div class="col-6">
-                @if (session('image'))
-                    <img src="{{ session('image') }}" alt="" class="img-fluid">
-                @endif
+                <img src="/{{ optional($slug->thumb)->path ?? '//via.placeholder.com/512x512' }}" alt="" class="img-fluid rounded">
             </div>
         </div>
-        @if (!$slug->images->isEmpty())
-            
-        <div class="row row-cols-1 row-cols-md-2 mt-4">
-            <div class="col">
-                <img src="/{{ $slug->imagesFull[0]->path }}" alt="" class="img-fluid">
-            </div>
-            <div class="col">
-                <img src="/{{ $slug->imagesThumb[0]->path }}" alt="" class="img-fluid">
-                {{ $slug->imagesThumb[0]->path }}
-            </div>
-        </div>
-        @endif
     </div>
     
 @endsection
