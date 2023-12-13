@@ -29,5 +29,6 @@ class AppServiceProvider extends ServiceProvider
         View::composer(['errors::*', 'errors.*'], function($view){
             $view->with('company', Company::first());
         });
+        
     }
 }

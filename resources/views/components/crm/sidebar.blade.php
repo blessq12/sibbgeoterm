@@ -1,19 +1,17 @@
+@php
+    $routes = [
+        (object) ['name' => 'Дашборд', 'route' => 'crm.index'],
+        (object) ['name' => 'Пользователи', 'route' => 'crm.users.index'],
+        (object) ['name' => 'Услуги', 'route' => 'crm.slugs.index'],
+        (object) ['name' => 'Компания', 'route' => 'crm.companies.index'],
+    ]
+@endphp
 <div class="sidebar">
     <ul>
-        <a href="">
-            <li>Дашборд</li>
-        </a>
-        <a href="">
-            <li>Клиенты</li>
-        </a>
-        <a href="">
-            <li>Заявки</li>
-        </a>
-        <a href="">
-            <li>Отзывы</li>
-        </a>        
-        <a href="{{ route('crm.users.index') }}">
-            <li>Пользователи</li>
-        </a>
+        @foreach ($routes as $route)
+            <a href="{{ route($route->route) }}">
+                <li>{{ $route->name }}</li>
+            </a>
+        @endforeach
     </ul>
 </div>

@@ -44,6 +44,7 @@ Route::middleware('auth')->group(function(){
         Route::resource('companies', CompanyController::class);
         Route::patch('/users/active/{id}', [UserController::class, 'active'])->name('users.active');
         Route::resource('users', UserController::class);
+        Route::patch('/slugs/image-upload', [SlugController::class, 'uploadImage'])->name('slugs.image-upload');
         Route::resource('slugs', SlugController::class);
     }); 
 });
