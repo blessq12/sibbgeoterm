@@ -11,7 +11,7 @@
             <a href="{{ route('main.slug.single-slug', $slug->uri) }}" class="text-decoration-none">
                 <div class="col">
                     <div class="position-relative d-flex align-items-end px-2 py-4 mb-4 overflow-hidden rounded" style="min-height: 300px">
-                        <img src="{{ optional($slug->thumb)->path ?? '//via.placeholder.com/512x512' }}" alt="" class="img-fluid position-absolute align-self-center w-100" style="left:0">
+                        <img src="{{ optional($slug->thumb)->path ?? '//via.placeholder.com/512x512' }}" alt="" class="position-absolute align-self-center">
                         <div class="overlay"></div>
                             <div class="position-relative">
                                 <h4 class="mb-0 fs-5">{{ $slug->name }}</h4>

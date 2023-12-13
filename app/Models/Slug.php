@@ -15,6 +15,9 @@ class Slug extends Model
     }
 
     public function thumb(){
-        return $this->morphOne(Image::class, 'image');
+        return $this->morphOne(Image::class, 'image')->where('type', 'thumb');
+    }
+    public function image(){
+        return $this->morphOne(Image::class, 'image')->where('type', 'original');
     }
 }
