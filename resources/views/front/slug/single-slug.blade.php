@@ -6,7 +6,14 @@
 @section('content')
     <x-front.slug-header
         image="/{{ optional($slug->image)->path ?? '//via.placeholder.com/1920x1080' }}"
-    ></x-front.slug-header>
+        :slug="$slug"
+    >
+    
+        <button type="button" class="btn btn-outline-light btn-lg">
+            Узнать стоимость 
+        </button>
+
+    </x-front.slug-header>
     
     @yield('slug-content')
 @endsection

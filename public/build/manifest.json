@@ -34,7 +34,7 @@
     "src": "resources/sass/crm/app.sass"
   },
   "resources/sass/front/app.sass": {
-    "file": "assets/app-95e243be.css",
+    "file": "assets/app-eab1da9e.css",
     "isEntry": true,
     "src": "resources/sass/front/app.sass"
   }
