@@ -5463,3 +5463,8 @@
 127.0.0.1 - - [13/Dec/2023:22:50:09 +0700] "GET /slug/assets/uploads/slug-fasadnie-raboty.jpg HTTP/1.1" 404 6619
 127.0.0.1 - - [13/Dec/2023:22:50:16 +0700] "GET /slug/fasadnie-raboty HTTP/1.1" 200 6088
 127.0.0.1 - - [13/Dec/2023:22:50:22 +0700] "GET /slug/fasadnie-raboty HTTP/1.1" 200 6088
+127.0.0.1 - - [13/Dec/2023:22:53:04 +0700] "GET /slug HTTP/1.1" 200 11875
+127.0.0.1 - - [13/Dec/2023:22:53:04 +0700] "GET /build/assets/RoadRadio_Bold-d7cea1c7.woff2 HTTP/1.1" 200 24476
+127.0.0.1 - - [13/Dec/2023:22:53:04 +0700] "GET /build/assets/app-95e243be.css HTTP/1.1" 200 4205
+127.0.0.1 - - [13/Dec/2023:22:53:04 +0700] "GET /assets/uploads/thumb-slug-fasadnie-raboty.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [13/Dec/2023:22:53:06 +0700] "GET /slug/otdelka-pomesheniy HTTP/1.1" 200 6351
