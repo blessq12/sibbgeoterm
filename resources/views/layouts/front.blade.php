@@ -14,6 +14,9 @@
 <body>
     <div id="app">
         <modal></modal>
+        <mobile-nav
+            :company='@json($company)'
+        ></mobile-nav>
         @auth
             <x-crm.topbar></x-crm.topbar>
         @endauth

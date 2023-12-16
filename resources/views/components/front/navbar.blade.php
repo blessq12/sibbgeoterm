@@ -12,7 +12,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-6 ">
+            <div class="col-lg-6 d-none d-md-flex">
                 @php
                     $links = [
                         (object) ['name' => 'Строительство', 'route' => 'main.construct.index'],
@@ -32,12 +32,17 @@
                     @endforeach
                 </ul>
             </div>
-            <div class="col-6 col-lg-3">
+            <div class="col-6 col-lg-3 d-none d-md-flex">
                 <div class="d-flex justify-content-end">
-                    <vbutton class="btn btn-outline-light">
+                    <vbutton class="btn btn-outline-light" target="modal">
                         Консультация
                     </vbutton>
                 </div>
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+                <vbutton target="mobile" class="btn">
+                    <i class="fa fa-bars fa-2x text-light"></i>
+                </vbutton>
             </div>
         </div>
     </div>

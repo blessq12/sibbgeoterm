@@ -30,5 +30,6 @@ class AppServiceProvider extends ServiceProvider
             $view->with('company', Company::first());
         });
         
+        View::share('company', Company::first());
     }
 }

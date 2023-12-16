@@ -4,7 +4,8 @@ import { appStore } from '../stores/appStore';
 export default{
     props:{
         class: String,
-        type: String
+        target: String
+
     },
     computed:{
         ...mapStores(appStore)
@@ -13,7 +14,7 @@ export default{
 </script>
 
 <template>
-    <button type="button" :class="class" @click="appStore.modal=!appStore.modal">
+    <button type="button" :class="class" @click="appStore[target]=!appStore[target]">
         <slot></slot>
     </button>
 </template>
