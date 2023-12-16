@@ -13,6 +13,7 @@
 </head>
 <body>
     <div id="app">
+        <modal></modal>
         @auth
             <x-crm.topbar></x-crm.topbar>
         @endauth

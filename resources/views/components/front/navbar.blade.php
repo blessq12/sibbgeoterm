@@ -34,10 +34,7 @@
             </div>
             <div class="col-6 col-lg-3">
                 <div class="d-flex justify-content-end">
-                    <a href="#" class="btn btn-outline-light">
-                        Задать вопрос
-                        <i class="fa fa-question px-2"></i>
-                    </a>
+                    <vbutton class="btn btn-outline-light">asdasd</vbutton>
                 </div>
             </div>
         </div>
