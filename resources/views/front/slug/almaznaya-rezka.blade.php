@@ -40,8 +40,8 @@
             </div>
             <div class="col-12 col-md-6">
                 <ul class="d-flex p-0 m-0 align-items-center">
-                    <li><img src="{{ asset('assets/images/88313ec.jpeg') ?? '//via.placeholder.com/240x380'}}" alt="" class="img-fluid"></li>
-                    <li class="mx-4"><img src="{{ asset('assets/images/e31cdff.jpeg') ?? '//via.placeholder.com/240x380' }}" alt="" class="img-fluid"></li>
+                    <li><img src="{!! file_exists(public_path('assets/images/88313ec.jpeg')) ? asset('assets/images/88313ec.jpeg') : '//via.placeholder.com/240x360' !!}" alt="" class="img-fluid"></li>
+                    <li class="mx-4"><img src="{!! file_exists(public_path('assets/images/e31cdff.jpeg')) ? asset('assets/images/e31cdff.jpeg') : '//via.placeholder.com/240x360' !!}" alt="" class="img-fluid"></li>
                 </ul>
             </div>
         </div>
