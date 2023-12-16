@@ -34,7 +34,9 @@
             </div>
             <div class="col-6 col-lg-3">
                 <div class="d-flex justify-content-end">
-                    <vbutton class="btn btn-outline-light">asdasd</vbutton>
+                    <vbutton class="btn btn-outline-light">
+                        Консультация
+                    </vbutton>
                 </div>
             </div>
         </div>
