@@ -22,16 +22,17 @@
 <section>
     <div class="container">
         <div class="row mb-4">
-            <div class="col-12">
+            <div class="col-12 position-relative">
                 <h2 class="section-title">
                     Только сертифицированное оборудованиие
                 </h2>
+                
             </div>
         </div>
         <div class="row">
             <div class="col-12 col-md-6">
-                <img src="{{ asset('assets/images/hilti-logo.png') }}" alt="" class="img-fluid mb-4">
-                <p class="mb-0">
+                <object data="{{ asset('assets/images/82da17c.svg') }}" class="mb-4"  type=""></object>
+                <p class="mb-4 mb-md-4">
                     Наш инструмент способен просверлить отверстия в таких материалах, которые трудно доступны или полностью недоступны другому оборудованию.
                     При попадании на арматуру, мы сверлим ее, а не начинает бурить новое отверстие рядом.
                     Уровень шума практически равен нулю, ваши соседи даже не узнают, что вы проводили работы.

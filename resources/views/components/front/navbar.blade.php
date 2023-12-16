@@ -1,18 +1,14 @@
 <nav>
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-6 col-lg-3">
+        <div class="row row-cols-2 row-cols-md-3 align-items-center">
+            <div class="col col-md-2">
                 <a href="{{ route('main.index') }}">
                     <div class="nav-logo">
                         <img src="{{$company->logo}}" alt="{{$company->name}}" class="img-fluid">
-                        <div class="d-block">
-                            <h4>{{ $company->name }}</h4>
-                            <p>Строительная компания</p>
-                        </div>
                     </div>
                 </a>
             </div>
-            <div class="col-lg-6 d-none d-md-block">
+            <div class="col-md-8 d-none d-md-block">
                 @php
                     $links = [
                         (object) ['name' => 'Строительство', 'route' => 'main.construct.index'],
@@ -32,14 +28,14 @@
                     @endforeach
                 </ul>
             </div>
-            <div class="col-6 col-lg-3 d-none d-md-block">
+            <div class="col col-md-2 d-none d-md-block">
                 <div class="d-flex justify-content-end">
                     <vbutton class="btn btn-outline-light" target="modal">
                         Консультация
                     </vbutton>
                 </div>
             </div>
-            <div class="col-6 d-md-none d-flex justify-content-end">
+            <div class="cols d-md-none d-flex justify-content-end">
                 <vbutton target="mobile" class="btn">
                     <i class="fa fa-bars fa-2x text-light"></i>
                 </vbutton>

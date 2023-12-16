@@ -1,4 +1,4 @@
-<div class="top-bar">
+<div class="top-bar d-none d-md-block">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-6">

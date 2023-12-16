@@ -67,7 +67,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
                     <div class="border border-light border-2 rounded p-4 h-100 d-flex align-items-center bg-light text-dark">
                         <div>
                             <h3 class="border-start border-danger border-5 px-4">
@@ -84,8 +84,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-8">
-                    <div class="row flex-column w-100">
+                <div class="col-12 col-lg-8">
+                    <div class="row flex-row flex-md-column w-lg-100">
                         <div class="col mb-4">
                             <div class="border border-2 rounded border-light p-3">
                                 <h3 class="border-start border-danger border-5 px-4">

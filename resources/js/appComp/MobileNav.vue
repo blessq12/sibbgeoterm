@@ -15,6 +15,21 @@ export default{
     }),
     computed:{
         ...mapStores( appStore )
+    },
+    watch:{
+        'appStore.mobile':{
+            handler(val){
+                if (val) {
+                    if (!document.body.classList.contains('overflow-hidden')){
+                        document.body.classList.add('overflow-hidden')
+                    }
+                } else {
+                    if (document.body.classList.contains('overflow-hidden')){
+                        document.body.classList.remove('overflow-hidden')
+                    }
+                }
+            }
+        }
     }
 }
 </script>
@@ -93,4 +108,5 @@ export default{
     width: 100%
     z-index: 20
     padding: 24px 0
+    overflow: auto
 </style>
