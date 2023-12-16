@@ -42,21 +42,17 @@ export default{
             </ul>
         </div>
         <div class="col-12 col-md-8">
-            <transition
+            <transition-group
                 enter-active-class="animate__animated animate__fadeIn"
                 leave-active-class="animate__animated animate__fadeOut"
-                mode="out-in"
+                tag="div"
+                class="position-relative"
             >
-                <div v-if="current == 1">
-                    {{ equip[current - 1] }}
+                <div v-for="item in equip" class="position-absolute overflow-hidden top-0" :key="'key-'+item.name" v-show="current == item.id">
+                    {{ item }}
+
                 </div>
-                <div v-else-if="current == 2">
-                    {{ equip[current - 1] }}
-                </div>
-                <div v-else-if="current == 3">
-                    {{ equip[current - 1] }}
-                </div>
-            </transition>
+            </transition-group>
         </div>
     </div>
 </template>
