@@ -5,6 +5,14 @@ export default{
     props:{
         company: Object
     },
+    data:()=>({
+        link:[
+            {id: 1, name: 'Строительство', route: '/construct'},
+            {id: 2, name: 'Услуги', route: '/slug'},
+            {id: 3, name: 'О нас', route: '/about'},
+            {id: 4, name: 'Контакты', route: '/contact'},
+        ]
+    }),
     computed:{
         ...mapStores( appStore )
     }
@@ -24,7 +32,7 @@ export default{
                     <div class="col-12">
                         <div class="header">
                             <div class="d-flex justify-content-between">
-                                <h3>Мобильное меню</h3>
+                                <h3 class="section-title">Мобильное меню</h3>
                                 <button class="btn-close btn-close-white"
                                     @click="appStore.mobile = !appStore.mobile"
                                 ></button>
@@ -34,22 +42,39 @@ export default{
                 </div>
                 <div class="row mb-4">
                     <div class="col-12">
-                        <h5>Навигация</h5>
+                        <h5 class="section-title">Навигация</h5>
                         <ul>
-                            <li>Главная страница</li>
-                            <li>Строительство</li>
-                            <li>Услуги</li>
-                            <li>О нас</li>
-                            <li>Контакты</li>
-                            <li>Вакансии</li>
-                            <li>Отзывы</li>
+                            <a :href="link.route" v-for="link in link" :key="link.id" class="text-decoration-none">
+                                <li class="py-4 border-bottom border-danger text-center"> 
+                                    <h5>{{ link.name }}</h5>
+                                </li>
+                            </a>
                         </ul>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <h5>Контактная информация</h5>
-                        {{ company }}
+                        <h5 class="section-title">Контактная информация</h5>
+                        <ul class="">
+                            <a :href="'tel:' + company.tel" class="text-decoration-none">
+                                <li class="d-flex align-items-center justify-content-center border-bottom border-danger py-4">
+                                    <i class="fa fa-phone "></i>
+                                    <h5 class="mb-0 mx-2"> {{ company.tel }} </h5>
+                                </li>
+                            </a>
+                            <a :href="'mailto:' + company.email" class="text-decoration-none">
+                                <li class="d-flex align-items-center justify-content-center border-bottom border-danger py-4">
+                                    <i class="fa fa-envelope"></i>
+                                    <h5 class="mb-0 mx-2">{{ company.email }}</h5>
+                                </li>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <li class="d-flex align-items-center justify-content-center py-4">
+                                    <i class="fa fa-map-marker"></i>
+                                    <h5 class="mb-0 mx-2">{{ company.address }}</h5>
+                                </li>
+                            </a>
+                        </ul>
                     </div>
                 </div>
             </div>
