@@ -9,7 +9,7 @@
             <div class="col-12 col-md-12 col-lg-6">
                 <a href="{{ route('main.construct.angary') }}">
                     <div class="construct-item text-center">
-                        <h2>Строительство безкарскасных ангаров арочного типа</h2>
+                        <h2>Строительство бескаркастных ангаров арочного типа</h2>
                     </div>
                 </a>
             </div>
