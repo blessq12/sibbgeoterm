@@ -79,4 +79,105 @@
             </div>
         </div>
     </section>
+
+    <section>
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h2 class="section-title">
+                        Что мы строим
+                    </h2>
+                    <p>
+                        Мы предлагаем разные типы объектов: однопролетные и многопролетные здания, односкатные, двускатные и ассиметричные сооружения. 
+                        Изготовление осуществляется из прочных и легких материалов, стоимость которых доступна как для крупных предпринимателей, так и для частных лиц.
+                    </p>
+                </div>
+            </div>
+            <div class="row align-items-center mb-4">
+                <div class="col-12 col-lg-5">
+                    <h4 class="section-title mb-4">
+                        Промышленные здания
+                    </h4>
+                    @php
+                        $prom = [
+                            (object)['name' => 'Склады'],
+                            (object)['name' => 'Ангары'],
+                            (object)['name' => 'Металлокаркасы'],
+                            (object)['name' => 'Котельни'],
+                            (object)['name' => 'Электрозарядные станции'],
+                            (object)['name' => 'Цеха'],
+                            (object)['name' => 'Складские здания'],
+                            (object)['name' => 'Заводы'],
+                            (object)['name' => 'Здания из металлоконструкций'],
+                        ]
+                    @endphp
+                    <ul>
+                        @foreach ($prom as $item)
+                            <li>{{ $item->name }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <img src="//via.placeholder.com/1920x1080" alt="" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="row align-items-center flex-row-reverse mb-4">
+                <div class="col-12 col-lg-5">
+                    <h4 class="section-title mb-4">
+                        Сельскохозяйственные сооружения
+                    </h4>
+                    @php
+                        $prom = [
+                            (object)['name' => 'Хранилища'],
+                            (object)['name' => 'Ангары'],
+                            (object)['name' => 'Коровники'],
+                            (object)['name' => 'Зернохранилища'],
+                            (object)['name' => 'Пристройки'],
+                            (object)['name' => 'Овощехранилища'],
+                            (object)['name' => 'Склады'],
+                            (object)['name' => 'Свинарники'],
+                            (object)['name' => 'Животноводческие комплексы'],
+                        ]
+                    @endphp
+                    <ul>
+                        @foreach ($prom as $item)
+                            <li>{{ $item->name }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <img src="//via.placeholder.com/1920x1080" alt="" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="row align-items-center mb-4">
+                <div class="col-12 col-lg-5">
+                    <h4 class="section-title mb-4">
+                        Другие быстровозводимые здания
+                    </h4>
+                    @php
+                        $prom = [
+                            (object)['name' => 'Магазины'],
+                            (object)['name' => 'Автостоянки'],
+                            (object)['name' => 'Паркинги'],
+                            (object)['name' => 'Автомойки'],
+                            (object)['name' => 'Павильоны'],
+                            (object)['name' => 'Торговые здания'],
+                            (object)['name' => 'Энергоцентры'],
+                            (object)['name' => 'Автосалоны'],
+                            (object)['name' => 'Автоцентры'],
+                        ]
+                    @endphp
+                    <ul>
+                        @foreach ($prom as $item)
+                            <li>{{ $item->name }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <img src="//via.placeholder.com/1920x1080" alt="" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
 @endsection
