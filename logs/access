@@ -6517,3 +6517,11 @@
 127.0.0.1 - - [18/Dec/2023:16:42:32 +0700] "GET /assets/images/88313ec.jpeg HTTP/1.1" 304 -
 127.0.0.1 - - [18/Dec/2023:16:42:32 +0700] "GET /assets/images/e31cdff.jpeg HTTP/1.1" 304 -
 127.0.0.1 - - [18/Dec/2023:16:42:33 +0700] "GET /assets/favicon/site.webmanifest HTTP/1.1" 200 576
+127.0.0.1 - - [18/Dec/2023:16:47:17 +0700] "GET /slug/almaznaya-rezka HTTP/1.1" 200 10116
+127.0.0.1 - - [18/Dec/2023:16:47:28 +0700] "GET /slug/almaznaya-rezka HTTP/1.1" 200 10153
+127.0.0.1 - - [18/Dec/2023:16:48:08 +0700] "GET /slug/almaznaya-rezka HTTP/1.1" 200 11647
+127.0.0.1 - - [18/Dec/2023:16:48:18 +0700] "GET /slug/almaznaya-rezka HTTP/1.1" 200 11647
+127.0.0.1 - - [18/Dec/2023:16:48:23 +0700] "GET /slug/almaznaya-rezka HTTP/1.1" 200 11647
+127.0.0.1 - - [18/Dec/2023:16:49:48 +0700] "GET /slug/almaznaya-rezka HTTP/1.1" 200 11999
+127.0.0.1 - - [18/Dec/2023:16:50:02 +0700] "GET /slug/almaznaya-rezka HTTP/1.1" 200 12000
+127.0.0.1 - - [18/Dec/2023:16:50:20 +0700] "GET /slug/almaznaya-rezka HTTP/1.1" 200 12016

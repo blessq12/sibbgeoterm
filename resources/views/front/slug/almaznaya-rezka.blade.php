@@ -6,14 +6,29 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="border p-3 border-3 border-danger">
-                    <p>
-                        
-                    </p>
+                <div class="bg-red-dark rounded text-light p-5">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6">
+                            <h3>Бурение в чистовых условиях</h3>
+                            <p>
+                                Если стоит главная задача - требуется сохранить целостность отделки, то этот вариант сверления для вас. 
+                                В настоящее время это возможно благодаря специальному устройству - рециркулятору. Для этого надевается водосборное кольцо, через которую циркулирует вода. 
+                                Она омывает края режущего элемента и тем самым собирает всю грязи и пыль в емкость. По завершении работ остается только вылить эту воду с грязью. 
+                                Это исключает необходимость использования строительного пылесоса и получить нужный результат.
+                            </p>
+                            <p>
+                                С помощь такой установки все задачи будут выполнены оперативно и качественно, а ваш ремонт не пострадает!
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <iframe width="100%" class="rounded" height="315" src="https://www.youtube.com/embed/u2oohp1I-7U?si=xDhp8VjH6JTQSaLE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    
 </section>
 
 <section>
