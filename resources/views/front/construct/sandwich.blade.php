@@ -179,5 +179,7 @@
             </div>
         </div>
     </section>
-
+    <section>
+        <angar-slider></angar-slider>
+    </section>
 @endsection

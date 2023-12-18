@@ -6310,3 +6310,16 @@
 127.0.0.1 - - [18/Dec/2023:14:21:40 +0700] "GET /construct/sandwich HTTP/1.1" 200 19276
 127.0.0.1 - - [18/Dec/2023:14:21:58 +0700] "GET /construct/sandwich HTTP/1.1" 200 19276
 127.0.0.1 - - [18/Dec/2023:14:22:48 +0700] "GET /construct/sandwich HTTP/1.1" 200 19241
+127.0.0.1 - - [18/Dec/2023:14:24:11 +0700] "GET / HTTP/1.1" 200 7442
+127.0.0.1 - - [18/Dec/2023:14:24:11 +0700] "GET /build/assets/app-68d73383.css HTTP/1.1" 200 3348
+127.0.0.1 - - [18/Dec/2023:14:24:11 +0700] "GET /build/assets/app-9ffd5823.js HTTP/1.1" 200 283641
+127.0.0.1 - - [18/Dec/2023:14:24:11 +0700] "GET /build/assets/app-eab1da9e.css HTTP/1.1" 200 4486
+127.0.0.1 - - [18/Dec/2023:14:24:12 +0700] "GET /build/assets/RoadRadio_Bold-d7cea1c7.woff2 HTTP/1.1" 200 24476
+127.0.0.1 - - [18/Dec/2023:14:24:12 +0700] "GET /assets/favicon/safari-pinned-tab.svg HTTP/1.1" 200 619774
+127.0.0.1 - - [18/Dec/2023:14:24:13 +0700] "GET /construct HTTP/1.1" 200 7412
+127.0.0.1 - - [18/Dec/2023:14:24:13 +0700] "GET /construct/sandwich HTTP/1.1" 200 19241
+127.0.0.1 - - [18/Dec/2023:14:31:39 +0700] "GET /construct/sandwich HTTP/1.1" 200 19544
+127.0.0.1 - - [18/Dec/2023:14:33:50 +0700] "GET /construct HTTP/1.1" 200 7412
+127.0.0.1 - - [18/Dec/2023:14:33:52 +0700] "GET /construct/angary HTTP/1.1" 200 15963
+127.0.0.1 - - [18/Dec/2023:14:34:43 +0700] "GET /construct HTTP/1.1" 200 7412
+127.0.0.1 - - [18/Dec/2023:14:34:45 +0700] "GET /construct/sandwich HTTP/1.1" 200 19307
