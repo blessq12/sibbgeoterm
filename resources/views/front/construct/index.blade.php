@@ -16,7 +16,7 @@
             <div class="col-12 col-md-12 col-lg-6">
                 <a href="{{ route('main.construct.sandwich') }}">
                     <div class="construct-item text-center">
-                        <h2>Сооружения из сендвич панелей</h2>
+                        <h2>Строительство и проектиирование складских и промышленных зданий</h2>
                     </div>
                 </a>
             </div>

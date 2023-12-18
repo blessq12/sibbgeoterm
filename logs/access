@@ -6234,3 +6234,9 @@
 127.0.0.1 - - [17/Dec/2023:00:15:46 +0700] "GET /construct/angary HTTP/1.1" 200 15770
 127.0.0.1 - - [17/Dec/2023:00:16:24 +0700] "GET /construct/angary HTTP/1.1" 200 15770
 127.0.0.1 - - [17/Dec/2023:00:17:32 +0700] "GET /construct/angary HTTP/1.1" 200 15770
+127.0.0.1 - - [17/Dec/2023:21:42:03 +0700] "GET / HTTP/1.1" 200 7442
+127.0.0.1 - - [17/Dec/2023:21:42:03 +0700] "GET /build/assets/app-68d73383.css HTTP/1.1" 200 3348
+127.0.0.1 - - [17/Dec/2023:21:42:03 +0700] "GET /build/assets/app-eab1da9e.css HTTP/1.1" 200 4486
+127.0.0.1 - - [17/Dec/2023:21:42:03 +0700] "GET /build/assets/RoadRadio_Bold-d7cea1c7.woff2 HTTP/1.1" 200 24476
+127.0.0.1 - - [17/Dec/2023:21:42:03 +0700] "GET /build/assets/app-9ffd5823.js HTTP/1.1" 200 283641
+127.0.0.1 - - [17/Dec/2023:21:42:05 +0700] "GET /favicon.ico HTTP/1.1" 200 15086
