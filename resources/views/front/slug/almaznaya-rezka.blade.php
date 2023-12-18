@@ -32,6 +32,34 @@
 </section>
 
 <section>
+    @php
+        $advants = [
+            (object) ['name' => 'Скорость', 'text' => 'Самый быстрый способ, практически не имеет минусов', 'icon' => 'fa fa-clock-o'],
+            (object) ['name' => 'Надежность', 'text' => 'Это безударный способ, поэтому трещины не появятся', 'icon' => 'fa fa-shield'],
+            (object) ['name' => 'Стоимость', 'text' => 'Благодаря скорости сокращаются и расходы', 'icon' => 'fa fa-money'],
+            (object) ['name' => 'Точность', 'text' => 'Края получаются идеально круглые и гладкие', 'icon' => 'fa fa-balance-scale'],
+        ]
+    @endphp
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+            
+            @foreach ($advants as $item)
+            <div class="col">
+                <div class="border p-3 border-danger rounded h-100 text-center d-flex align-items-start" style="min-height: 250px">
+                    <div>
+                        <i class="{{ $item->icon }} mb-4" style="font-size: 65px"></i>
+                        <h5>{{ $item->name }}</h5>
+                        <p>{{ $item->text }}</p>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+            
+        </div>
+    </div>
+</section>
+
+<section>
     <div class="container">
         <div class="row mb-4">
             <div class="col-12 position-relative">
