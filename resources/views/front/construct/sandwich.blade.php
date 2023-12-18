@@ -93,7 +93,7 @@
                     </p>
                 </div>
             </div>
-            <div class="row align-items-center mb-4">
+            <div class="row align-items-center mb-5">
                 <div class="col-12 col-lg-5">
                     <h4 class="section-title mb-4">
                         Промышленные здания
@@ -121,7 +121,7 @@
                     <img src="//via.placeholder.com/1920x1080" alt="" class="img-fluid rounded">
                 </div>
             </div>
-            <div class="row align-items-center flex-row-reverse mb-4">
+            <div class="row align-items-center flex-row-reverse mb-5">
                 <div class="col-12 col-lg-5">
                     <h4 class="section-title mb-4">
                         Сельскохозяйственные сооружения
@@ -149,7 +149,7 @@
                     <img src="//via.placeholder.com/1920x1080" alt="" class="img-fluid rounded">
                 </div>
             </div>
-            <div class="row align-items-center mb-4">
+            <div class="row align-items-center">
                 <div class="col-12 col-lg-5">
                     <h4 class="section-title mb-4">
                         Другие быстровозводимые здания
