@@ -6240,3 +6240,14 @@
 127.0.0.1 - - [17/Dec/2023:21:42:03 +0700] "GET /build/assets/RoadRadio_Bold-d7cea1c7.woff2 HTTP/1.1" 200 24476
 127.0.0.1 - - [17/Dec/2023:21:42:03 +0700] "GET /build/assets/app-9ffd5823.js HTTP/1.1" 200 283641
 127.0.0.1 - - [17/Dec/2023:21:42:05 +0700] "GET /favicon.ico HTTP/1.1" 200 15086
+127.0.0.1 - - [18/Dec/2023:13:40:38 +0700] "GET / HTTP/1.1" 200 7442
+127.0.0.1 - - [18/Dec/2023:13:40:39 +0700] "GET /build/assets/app-9ffd5823.js HTTP/1.1" 304 -
+127.0.0.1 - - [18/Dec/2023:13:40:39 +0700] "GET /build/assets/app-eab1da9e.css HTTP/1.1" 304 -
+127.0.0.1 - - [18/Dec/2023:13:40:39 +0700] "GET /build/assets/RoadRadio_Bold-d7cea1c7.woff2 HTTP/1.1" 304 -
+127.0.0.1 - - [18/Dec/2023:13:40:39 +0700] "GET /build/assets/app-68d73383.css HTTP/1.1" 304 -
+127.0.0.1 - - [18/Dec/2023:13:40:41 +0700] "GET /slug HTTP/1.1" 200 12593
+127.0.0.1 - - [18/Dec/2023:13:40:42 +0700] "GET /assets/uploads/thumb-slug-almaznaya-rezka.jpg HTTP/1.1" 200 63411
+127.0.0.1 - - [18/Dec/2023:13:40:42 +0700] "GET /assets/uploads/thumb-slug-fasadnie-raboty.jpg HTTP/1.1" 200 55226
+127.0.0.1 - - [18/Dec/2023:13:40:44 +0700] "GET /construct HTTP/1.1" 200 7412
+127.0.0.1 - - [18/Dec/2023:13:40:45 +0700] "GET /construct/sandwich HTTP/1.1" 200 7096
+127.0.0.1 - - [18/Dec/2023:13:41:55 +0700] "GET /construct/sandwich HTTP/1.1" 200 7207
