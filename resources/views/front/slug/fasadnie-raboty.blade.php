@@ -1,9 +1,45 @@
 @extends('front.slug.single-slug')
 
 @section('slug-content')
+
 <section>
     <div class="container">
-        
+        <div class="row mb-4">
+            <div class="col-12">
+                <h2 class="section-title">
+                    Занимаемся отделкой фасадов, декором под ключ 
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            @php
+                $slugs = [
+                    (object) ['name' => 'Сайдинг', 'desc' => 'Монтаж винилового, металического и других видов сайдинга', 'image' => 'https://fasadnye-raboty.ru/media/widgetkit/service_siding-b485e166beb8a65e000cfc6abf4aae27.jpg'],
+                    (object) ['name' => 'Фасадные панели', 'desc' => 'Термопанели, фасадные панели под различные текстуры', 'image' => 'https://fasadnye-raboty.ru/media/widgetkit/fasadnye-paneli-ebf63f3239177c5ea055d890478e6151.jpg'],
+                    (object) ['name' => 'Штукатурка и покраска', 'desc' => 'В том числе декоративная штукатурка фасадов и покраска', 'image' => 'https://fasadnye-raboty.ru/media/widgetkit/pokraska-fasadov-be77a52e92b279b849e1248bcbf33f02.jpg'],
+                    (object) ['name' => 'Утепление фасада', 'desc' => 'Различные виды утепления стен и фасадов зданий', 'image' => 'https://fasadnye-raboty.ru/media/widgetkit/uteplenie-fasadov-499170bc314a65cd8086a9712d352602.jpg'],
+                    (object) ['name' => 'Натуральные камень', 'desc' => '', 'image' => 'https://fasadnye-raboty.ru/media/widgetkit/uteplenie-fasadov-499170bc314a65cd8086a9712d352602.jpg'],
+                    (object) ['name' => 'Кирпич', 'desc' => '', 'image' => 'https://fasadnye-raboty.ru/media/widgetkit/uteplenie-fasadov-499170bc314a65cd8086a9712d352602.jpg'],
+                ]
+            @endphp
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                @foreach ($slugs as $item)
+                    <div class="col mb-4">
+                        <div class="position-relative rounded p-3 border-light border h-100 d-flex align-items-end">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="w-50">{{ $item->name }}</h5>
+                                <p class="mb-0">{{ $item->desc }}</p>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
         <div class="row">
             <div class="col-12 col-md-6">
                 <p>
