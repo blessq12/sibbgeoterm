@@ -45,7 +45,7 @@
             
             @foreach ($advants as $item)
             <div class="col">
-                <div class="border p-3 border-danger rounded h-100 text-center d-flex align-items-start" style="min-height: 250px">
+                <div class="border p-3 border-danger rounded h-100 text-center d-flex align-items-start" >
                     <div>
                         <i class="{{ $item->icon }} mb-4" style="font-size: 65px"></i>
                         <h5>{{ $item->name }}</h5>
@@ -94,7 +94,7 @@
         <div class="row mb-4">
             <div class="col-12">
                 <h2 class="section-title">
-                    оборудование и услуги
+                    услуги
                 </h2>
             </div>
         </div>
@@ -105,15 +105,25 @@
         </div>
     </div>
 </section>
+
+
 <section>
     <div class="container">
-        <div class="row">
+        <div class="row mb-4">
             <div class="col-12">
                 <h2 class="section-title">
                     Предварительный рассчет стоимости
                 </h2>
             </div>
         </div>
+        <div class="row">
+            кулькулятор
+        </div>
     </div>
 </section>
+
+<section>
+    <angar-slider></angar-slider>
+</section>
+
 @endsection
