@@ -30,7 +30,7 @@
                             <div class="overlay"></div>
                             <div class="d-flex align-items-center justify-content-between position-relative">
                                 <h5 class="w-50">{{ $item->name }}</h5>
-                                <p class="mb-0" style="max-width: 50%; font-size: .8rem; font-weight: 200">{{ $item->desc }}</p>
+                                <p class="mb-0" style="max-width: 60%; font-size: .8rem; font-weight: 200">{{ $item->desc }}</p>
                             </div>
                         </div>
                     </div>

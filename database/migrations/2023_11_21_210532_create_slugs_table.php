@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('uri')->unique();
             $table->string('name')->default('Заголовок не назначен');
-            $table->string('desc')->default('Описание не задано')->nullable();
+            $table->text('desc')->nullable();
             $table->boolean('status')->default(true);
             $table->string('view')->nullable();
             $table->timestamps();

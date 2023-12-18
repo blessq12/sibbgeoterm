@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-12">
                 <h1>{{ $slug->name }}</h1>
-                <p>{{ $slug->desc }}</p>
+                <p style="max-width: 70%">{{ $slug->desc }}</p>
             </div>
         </div>
 

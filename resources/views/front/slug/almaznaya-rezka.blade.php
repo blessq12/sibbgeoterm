@@ -7,11 +7,8 @@
         <div class="row">
             <div class="col-12">
                 <div class="border p-3 border-3 border-danger">
-                    <h2 class="section-title">
-                        Мы осуществляем работу без строительного мусора.
-                    </h2>
-                    <p class="mb-0">
-                        После нашей работы Вам не потребуется вызывать клиниговую службу
+                    <p>
+                        
                     </p>
                 </div>
             </div>

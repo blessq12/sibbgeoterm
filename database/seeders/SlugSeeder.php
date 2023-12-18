@@ -14,14 +14,14 @@ class SlugSeeder extends Seeder
     public function run(): void
     {
         DB::table('slugs')->insert([
-            ['name' => 'Алмазное бурение/Штробление/Демонтаж', 'uri' => 'almaznaya-rezka', 'view' => ''],
-            ['name' => 'Отделка помещений для вашего бизнеса', 'uri' => 'otdelka-pomesheniy', 'view' => ''],
-            ['name' => 'Монтаж электро освещения', 'uri' => 'electro-montazh', 'view' => ''],
-            ['name' => 'Водоснабжение и водоотведение', 'uri' => 'vodosnabzhenie', 'view' => ''],
-            ['name' => 'Фасадные работы', 'uri' => 'fasadnie-raboty', 'view' => ''],
-            ['name' => 'Пескоструйная обработка металла, дерева, бетона и камня', 'uri' => 'peskostyinaya-obrabotka', 'view' => ''],
-            ['name' => 'Малярные работы, безвоздушная покраска', 'uri' => 'malyarnie-raboty', 'view' => ''],
-            ['name' => 'Гибка листового метала', 'uri' => 'gibka-metala', 'view' => ''],
+            ['name' => 'Алмазное бурение/Штробление/Демонтаж', 'desc' => 'Вам нужно просверлить отверстие в стене или полу? Проштробить стены под проводку? Снести стену или перегородку? Звоните нам или оставляйте заявку.', 'uri' => 'almaznaya-rezka', 'view' => ''],
+            ['name' => 'Отделка помещений для вашего бизнеса', 'desc' =>'', 'uri' => 'otdelka-pomesheniy', 'view' => ''],
+            ['name' => 'Монтаж электро освещения', 'desc' =>'', 'uri' => 'electro-montazh', 'view' => ''],
+            ['name' => 'Водоснабжение и водоотведение', 'desc' =>'', 'uri' => 'vodosnabzhenie', 'view' => ''],
+            ['name' => 'Фасадные работы', 'desc' =>'', 'uri' => 'fasadnie-raboty', 'view' => ''],
+            ['name' => 'Пескоструйная обработка металла, дерева, бетона и камня', 'desc' =>'', 'uri' => 'peskostyinaya-obrabotka', 'view' => ''],
+            ['name' => 'Малярные работы, безвоздушная покраска', 'desc' =>'', 'uri' => 'malyarnie-raboty', 'view' => ''],
+            ['name' => 'Гибка листового метала', 'desc' =>'', 'uri' => 'gibka-metala', 'view' => ''],
         ]);
     }
 }
