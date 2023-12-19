@@ -16,6 +16,7 @@ class SlugSeeder extends Seeder
         DB::table('slugs')->insert([
             ['name' => 'Алмазное бурение/Штробление/Демонтаж', 'desc' => 'Вам нужно просверлить отверстие в стене или полу? Проштробить стены под проводку? Снести стену или перегородку? Звоните нам или оставляйте заявку.', 'uri' => 'almaznaya-rezka', 'view' => ''],
             ['name' => 'Отделка помещений для вашего бизнеса', 'desc' =>'', 'uri' => 'otdelka-pomesheniy', 'view' => ''],
+            ['name' => 'Монтаж сендвич панелей', 'desc' =>'', 'uri' => 'montazh-sendwich', 'view' => ''],
             ['name' => 'Монтаж электро освещения', 'desc' =>'', 'uri' => 'electro-montazh', 'view' => ''],
             ['name' => 'Водоснабжение и водоотведение', 'desc' =>'', 'uri' => 'vodosnabzhenie', 'view' => ''],
             ['name' => 'Фасадные работы', 'desc' =>'', 'uri' => 'fasadnie-raboty', 'view' => ''],
