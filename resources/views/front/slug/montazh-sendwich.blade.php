@@ -69,49 +69,14 @@
             <div class="col-12">
                 <ul class="nav nav-pills" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                      <button class="btn btn-outline-light rounded-0 active btn-lg" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button">
-                        Монтаж кровель сэндвич-панелей
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="btn btn-outline-light mx-4 rounded-0 btn-lg" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button">
+                      <button class="btn btn-outline-light active rounded-0 btn-lg" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button">
                         Монтаж стеновых сэндвич-панелей
                       </button>
                     </li>
                    
                   </ul>
                   <div class="tab-content py-4">
-                    <div class="tab-pane fade show active" id="home">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="bg-image h-100" style="background: url('https://snabpaneli.ru/i/orangepanels.png'); background-size: contain !important"></div>
-                            </div>
-                            <div class="col-lg-8">
-                                <table class="table table-dark table-hover">
-                                    <thead>
-                                        <tr>
-                                          <th scope="col">#</th>
-                                          <th scope="col">First</th>
-                                          <th scope="col">Last</th>
-                                          <th scope="col">Handle</th>
-                                        </tr>
-                                      </thead>
-                                      <tbody>
-                                        @foreach ([1,1,1,1,1] as $item)
-                                            <tr>
-                                                <th scope="row">{{ $loop->index }}</th>
-                                                <td>Mark</td>
-                                                <td>Otto</td>
-                                                <td>@mdo</td>
-                                            </tr> 
-                                        @endforeach
-                                        
-                                      </tbody>
-                                  </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="profile" >
+                    <div class="tab-pane fade show active" id="profile" >
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="bg-image h-100" style="background: url('https://snabpaneli.ru/i/wallpanels.png'); background-size: contain !important"></div>
@@ -135,7 +100,6 @@
                                                 <td>@mdo</td>
                                             </tr> 
                                         @endforeach
-                                        
                                       </tbody>
                                   </table>
                             </div>
