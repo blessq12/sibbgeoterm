@@ -15,7 +15,9 @@
     <div class="row row-cols-1 row-cols-md-2">
         <div class="col-8">
             <h5 class="mb-2">Основная информация</h5>
-            <p>Последние изменения: <span class="text-info">{{ $slug->updated_at->format('Y.m.d H:i') }}</span></p>
+            @if ($slug->updated_at !== null)
+                <p>Последние изменения: <span class="text-info">{{ $slug->updated_at->format('Y.m.d H:i') }}</span></p>
+            @endif
             <form action="{{ route('crm.slugs.update', $slug->id) }}" method="post">
                 @csrf @method('patch')
                 <div class="form-group mb-4">
