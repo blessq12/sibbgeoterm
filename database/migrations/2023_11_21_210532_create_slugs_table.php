@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('slugs', function (Blueprint $table) {
             $table->id();
+            $table->integer('priority');
             $table->string('uri')->unique();
             $table->string('name')->default('Заголовок не назначен');
             $table->text('desc')->nullable();

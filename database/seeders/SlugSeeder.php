@@ -14,15 +14,17 @@ class SlugSeeder extends Seeder
     public function run(): void
     {
         DB::table('slugs')->insert([
-            ['name' => 'Алмазное бурение/Штробление/Демонтаж', 'desc' => 'Вам нужно просверлить отверстие в стене или полу? Проштробить стены под проводку? Снести стену или перегородку? Звоните нам или оставляйте заявку.', 'uri' => 'almaznaya-rezka', 'view' => ''],
-            ['name' => 'Отделка помещений для вашего бизнеса', 'desc' =>'', 'uri' => 'otdelka-pomesheniy', 'view' => ''],
-            ['name' => 'Монтаж сендвич панелей', 'desc' =>'', 'uri' => 'montazh-sendwich', 'view' => ''],
-            ['name' => 'Монтаж электро освещения', 'desc' =>'', 'uri' => 'electro-montazh', 'view' => ''],
-            ['name' => 'Водоснабжение и водоотведение', 'desc' =>'', 'uri' => 'vodosnabzhenie', 'view' => ''],
-            ['name' => 'Фасадные работы', 'desc' =>'', 'uri' => 'fasadnie-raboty', 'view' => ''],
-            ['name' => 'Пескоструйная обработка металла, дерева, бетона и камня', 'desc' =>'', 'uri' => 'peskostyinaya-obrabotka', 'view' => ''],
-            ['name' => 'Малярные работы, безвоздушная покраска', 'desc' =>'', 'uri' => 'malyarnie-raboty', 'view' => ''],
-            ['name' => 'Гибка листового метала', 'desc' =>'', 'uri' => 'gibka-metala', 'view' => ''],
+
+            ['priority' => 1,'name' => 'Алмазное бурение/Штробление/Демонтаж', 'desc' => 'Вам нужно просверлить отверстие в стене или полу? Проштробить стены под проводку? Снести стену или перегородку? Звоните нам или оставляйте заявку.', 'uri' => 'almaznaya-rezka', 'view' => ''],
+            ['priority' => 2,'name' => 'Малярные работы, безвоздушная покраска', 'desc' =>'', 'uri' => 'malyarnie-raboty', 'view' => ''],
+            ['priority' => 3,'name' => 'Пескоструйная обработка металла, дерева, бетона и камня', 'desc' =>'', 'uri' => 'peskostyinaya-obrabotka', 'view' => ''],
+            ['priority' => 4,'name' => 'Фасадные работы', 'desc' =>'', 'uri' => 'fasadnie-raboty', 'view' => ''],
+            ['priority' => 5,'name' => 'Монтаж сендвич панелей', 'desc' =>'', 'uri' => 'montazh-sendwich', 'view' => ''],
+            ['priority' => 6,'name' => 'Изготовление фасадных элементов', 'desc' =>'', 'uri' => 'gibka-metala', 'view' => ''],
+            ['priority' => 7,'name' => 'Монтаж электроосвещения', 'desc' =>'', 'uri' => 'electro-montazh', 'view' => ''],
+            ['priority' => 8,'name' => 'Водоснабжение и водоотведение', 'desc' =>'', 'uri' => 'vodosnabzhenie', 'view' => ''],
+            ['priority' => 9,'name' => 'Отделка помещений для вашего бизнеса', 'desc' =>'', 'uri' => 'otdelka-pomesheniy', 'view' => ''],
+            
         ]);
     }
 }

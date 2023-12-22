@@ -40,7 +40,7 @@ class SlugController extends Controller
     public function index()
     {
         return view('crm.slugs.index',[
-            'slugs' => Slug::all()
+            'slugs' => Slug::orderBy('priority')->get()
         ]);
     }
 
