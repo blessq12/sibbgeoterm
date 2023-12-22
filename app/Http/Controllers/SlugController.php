@@ -70,26 +70,7 @@ class SlugController extends Controller
             'slug' => $slug
         ]);
     }
-    /**
-     * upload and resize image of specified resource
-     */
-    public function uploadImage(Request $request){
-        $slug = Slug::findOrFail($request->slugId);
-        $fileName = 'slug-' .$slug->uri . '.' . $request->file('image')->getClientOriginalExtension();
 
-        Image::make($request->file('image'))->resize(1080, null, fn ($img) => $img->aspectRatio())->save('assets/uploads/' . $fileName);
-        Image::make($request->file('image'))->resize(600, null, fn ($img) => $img->aspectRatio())->save('assets/uploads/' . 'thumb-' . $fileName);
-        
-        $slug->images()->each(fn ($image) => $image->delete());
-
-        $slug->images()->createMany([
-            ['type' => 'original', 'path' => 'assets/uploads/' . $fileName],
-            ['type' => 'thumb', 'path' => 'assets/uploads/' . 'thumb-' . $fileName],
-        ]);
-
-        return back();
-
-    }
     /**
      * Show the form for editing the specified resource.
      */
@@ -103,7 +84,15 @@ class SlugController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $slug = Slug::findOrFail($id);
+
+        $slug->update([
+            'name' => $request->name,
+            'desc' => $request->desc,
+            'status' => $request->status
+        ]);
+
+        return back()->with('success', 'Данные услуги обновлены');
     }
 
     /**

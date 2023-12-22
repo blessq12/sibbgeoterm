@@ -5,7 +5,7 @@
 
 @section('content')
     <x-front.slug-header
-        image="/{{ optional($slug->image)->path ?? '//via.placeholder.com/1920x1080' }}"
+        image="{{ $slug->image->first()->path ?? '//via.placeholder.com/1920x1080' }}"
         :slug="$slug"
     >
     

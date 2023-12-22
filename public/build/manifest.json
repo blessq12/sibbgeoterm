@@ -8,7 +8,7 @@
     "src": "resources/fonts/RoadRadio_Bold.woff2"
   },
   "resources/js/app.css": {
-    "file": "assets/app-086ec46b.css",
+    "file": "assets/app-97dfd7ab.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.js": {
@@ -17,9 +17,9 @@
       "assets/RoadRadio_Bold-d7cea1c7.woff2"
     ],
     "css": [
-      "assets/app-086ec46b.css"
+      "assets/app-97dfd7ab.css"
     ],
-    "file": "assets/app-9e2216e5.js",
+    "file": "assets/app-2103a870.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },

@@ -17,8 +17,12 @@
                     <x-crm.sidebar></x-crm.sidebar>
                 </div>
                 <div class="col-10 pt-4">
-                    <h3>@yield('title')</h3>
-                    <hr>
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <h3>@yield('title')</h3>
+                            <hr>
+                        </div>
+                    </div>
                     @yield('content')
                 </div>
             </div>

@@ -9,15 +9,19 @@ use App\Models\Image;
 class Slug extends Model
 {
     use HasFactory;
-
+    protected $fillable = [
+        'name',
+        'desc',
+        'status'
+    ];
     public function images(){
         return $this->morphMany(Image::class, 'image');
     }
 
     public function thumb(){
-        return $this->morphOne(Image::class, 'image')->where('type', 'thumb');
+        return $this->images()->where('type', 'thumb');
     }
     public function image(){
-        return $this->morphOne(Image::class, 'image')->where('type', 'original');
+        return $this->images()->where('type', 'image');
     }
 }

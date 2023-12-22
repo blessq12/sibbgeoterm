@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('name')->default('Заголовок не назначен');
             $table->text('desc')->nullable();
             $table->boolean('status')->default(true);
-            $table->string('view')->nullable();
             $table->timestamps();
         });
     }

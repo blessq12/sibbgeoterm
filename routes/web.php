@@ -4,6 +4,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\ConstructController;
 use App\Http\Controllers\CrmController;
+use App\Http\Controllers\ImageController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\SlugController;
 use App\Http\Controllers\UserController;
@@ -44,8 +45,12 @@ Route::middleware('auth')->group(function(){
         Route::resource('companies', CompanyController::class);
         Route::patch('/users/active/{id}', [UserController::class, 'active'])->name('users.active');
         Route::resource('users', UserController::class);
-        Route::patch('/slugs/image-upload', [SlugController::class, 'uploadImage'])->name('slugs.image-upload');
         Route::resource('slugs', SlugController::class);
+
+        Route::controller(ImageController::class)->name('image.')->prefix('image')->group(function(){
+            Route::post('/upload', 'uploadSlugImage')->name('upload-slug-image');
+            Route::delete('/delete/{id}', 'deleteImage')->name('delete-image');
+        });
     }); 
 });
 
