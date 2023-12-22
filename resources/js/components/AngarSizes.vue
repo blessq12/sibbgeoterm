@@ -5,11 +5,13 @@ export default{
     },
     data:()=>({
         angarSizes: [
-            {id:1, size: '6', image: '/assets/images/angars/h6.jpg', width: '12', height: '6', halfHeight: '3.3'},
-            {id:2, size: '6.5', image: '/assets/images/angars/h6-5.jpg', width: '13', height: '6.5', halfHeight: '3.4'},
-            {id:3, size: '7', image: '/assets/images/angars/h7.jpg', width: '14', height: '7', halfHeight: '3.6'},
-            {id:4, size: '7.5', image: '/assets/images/angars/h7-5.jpg', width: '15', height: '7.5', halfHeight: '3.7'},
-            {id:5, size: '8', image: '/assets/images/angars/h8.jpg', width: '16', height: '8', halfHeight: '3.9'}
+            {id:1, size: '5', image: '/assets/images/angars/h6.jpg', width: '10', height: '5'},
+            {id:2, size: '5.5', image: '/assets/images/angars/h6.jpg', width: '11', height: '5.5'},
+            {id:3, size: '6', image: '/assets/images/angars/h6.jpg', width: '12', height: '6'},
+            {id:4, size: '6.5', image: '/assets/images/angars/h6-5.jpg', width: '13', height: '6.5'},
+            {id:5, size: '7', image: '/assets/images/angars/h7.jpg', width: '14', height: '7'},
+            {id:6, size: '7.5', image: '/assets/images/angars/h7-5.jpg', width: '15', height: '7.5'},
+            {id:7, size: '8', image: '/assets/images/angars/h8.jpg', width: '16', height: '8'},
         ],
         current: 1
     })
@@ -65,15 +67,14 @@ export default{
                 enter-active-class="animate__animated animate__fadeInLeft"
                 leave-active-class="animate__animated animate__fadeOutLeft"
                 >
-                <div 
-                v-for="angar in angarSizes" :key="angar.id" 
-                v-show="current == angar.id" class="position-absolute"
-                ref="item"
-                >
-                <h4 class="border-start border-5 border-danger px-2">Ширина основания: <span class="text-danger">{{ angar.width }} метров</span></h4>
-                <h4 class="border-start border-5 border-danger px-2">Высота арки: <span class="text-danger">{{ angar.height }} метров</span></h4>
-                <h4 class="border-start border-5 border-danger px-2">Высота "2 этаж": <span class="text-danger">{{ angar.halfHeight }} метров</span></h4>
-            </div>
+                    <div 
+                    v-for="angar in angarSizes" :key="angar.id" 
+                    v-show="current == angar.id" class="position-absolute"
+                    ref="item"
+                    >
+                        <h4 class="border-start border-5 border-danger px-2">Ширина основания: <span class="text-danger">{{ angar.width }} метров</span></h4>
+                        <h4 class="border-start border-5 border-danger px-2">Высота арки: <span class="text-danger">{{ angar.height }} метров</span></h4>
+                    </div>
                 </transition-group>
             </div>
         </div>
