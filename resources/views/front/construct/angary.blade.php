@@ -5,7 +5,7 @@
 
 @section('content')
     <x-front.page-banner 
-        background="{{ asset('/assets/portfolio/2.jpg') }}"
+        background="/assets/images/banner.jpg"
         title="Строительство ангаров арочного типа"
     >
     <div class="d-flex">
@@ -43,15 +43,8 @@
                         @endforeach
                     </ul>
                 </div>
-                <div class="col-12 col-md-6 placeholder-glow">
-                    <div class="h-100 overflow-hidden d-flex position-relative rounded">
-                        <img 
-                            src="{{ asset('/assets/portfolio/1.jpg') }}" 
-                            alt="" 
-                            style="align-self: center"
-                            class="img-fluid position-absolute "
-                        >
-                    </div>
+                <div class="col-12 col-md-6">
+                    <div class="rounded bg-image h-100" style="background: url('/assets/images/banner.jpg')"></div>
                 </div>
             </div>
         </div>
@@ -131,6 +124,24 @@
         <angar-sizes></angar-sizes>
     </section>
     <section>
-        <angar-slider></angar-slider>
+        @php
+            $images = [
+                (object)['id' => 1, 'path' => '//via.placeholder.com/512x512'],
+                (object)['id' => 2, 'path' => '//via.placeholder.com/512x512'],
+                (object)['id' => 3, 'path' => '//via.placeholder.com/512x512'],
+                (object)['id' => 4, 'path' => '//via.placeholder.com/512x512'],
+                (object)['id' => 5, 'path' => '//via.placeholder.com/512x512'],
+                (object)['id' => 6, 'path' => '//via.placeholder.com/512x512'],
+            ]
+        @endphp
+        <page-slider
+            title="Примеры уже построенных ангаров"
+            subtitle="Ниже приведены примеры уже сданых и введеных в эксплуатацию ангаров"
+            :images='@json($images)'
+        >
+            <div class="border-light border p-3 d-flex align-items-center rounded h-100">
+                <h4>Для ознакомления представленые уже завершенные проекты, которые сданы в эксплуатацию</h4>
+            </div>
+        </page-slider>
     </section>
 @endsection

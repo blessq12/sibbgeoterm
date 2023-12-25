@@ -41,11 +41,11 @@
         ]
     @endphp
     <div class="container">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+        <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4">
             
             @foreach ($advants as $item)
-            <div class="col">
-                <div class="border p-3 border-danger rounded h-100 text-center d-flex align-items-start" >
+            <div class="col mb-4 mb-md-4 mb-lg-0">
+                <div class="border p-3 border-danger rounded h-100 text-center d-flex align-items-start justify-content-center">
                     <div>
                         <i class="{{ $item->icon }} mb-4" style="font-size: 65px"></i>
                         <h5>{{ $item->name }}</h5>
@@ -108,22 +108,42 @@
 
 
 <section>
-    <div class="container">
-        <div class="row mb-4">
-            <div class="col-12">
-                <h2 class="section-title">
-                    Предварительный рассчет стоимости
-                </h2>
-            </div>
-        </div>
-        <div class="row">
-            кулькулятор
-        </div>
-    </div>
+    <price-calc></price-calc>
 </section>
 
 <section>
-    <angar-slider></angar-slider>
+    @php
+        $images = [
+            (object)['id' => 1, 'path' => '/assets/images/almaz/1.jpeg'],
+            (object)['id' => 2, 'path' => '/assets/images/almaz/2.jpeg'],
+            (object)['id' => 3, 'path' => '/assets/images/almaz/3.jpeg'],
+            (object)['id' => 4, 'path' => '/assets/images/almaz/4.jpeg'],
+            (object)['id' => 5, 'path' => '/assets/images/almaz/5.jpeg'],
+            (object)['id' => 6, 'path' => '/assets/images/almaz/6.jpeg'],
+            (object)['id' => 7, 'path' => '/assets/images/almaz/7.jpeg'],
+            (object)['id' => 8, 'path' => '/assets/images/almaz/8.jpeg'],
+            (object)['id' => 9, 'path' => '/assets/images/almaz/9.jpeg'],
+            (object)['id' => 10, 'path' => '/assets/images/almaz/10.jpeg'],
+            (object)['id' => 11, 'path' => '/assets/images/almaz/11.jpeg'],
+            (object)['id' => 12, 'path' => '/assets/images/almaz/12.jpeg'],
+            (object)['id' => 13, 'path' => '/assets/images/almaz/13.jpeg'],
+            (object)['id' => 14, 'path' => '/assets/images/almaz/14.jpeg'],
+        ]
+    @endphp
+    <page-slider 
+        title="Примеры работ"
+        subtitle="Ниже представлены некоторые из наших завершенных заказов чтобы было понимание результатов"
+        :images='@json($images)'
+    >
+        <div class="d-flex align-items-center h-100 border rounded border-light p-3">
+            <div class="d-block">
+                <h4 class="text-red">
+                    примеры наших выполненных заказов
+                </h4>
+                <p>Воспользуйтесь навигацией, чтобы ознакомиться с примерами завершенных заказов</p>
+            </div>
+        </div>
+    </page-slider>
 </section>
 
 @endsection
