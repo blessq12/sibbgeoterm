@@ -20,7 +20,7 @@ class SlugSeeder extends Seeder
             ['priority' => 3,'name' => 'Пескоструйная обработка металла, дерева, бетона и камня', 'desc' =>'', 'uri' => 'peskostyinaya-obrabotka', ],
             ['priority' => 4,'name' => 'Фасадные работы', 'desc' =>'', 'uri' => 'fasadnie-raboty', ],
             ['priority' => 5,'name' => 'Монтаж сендвич панелей', 'desc' =>'', 'uri' => 'montazh-sendwich', ],
-            ['priority' => 6,'name' => 'Изготовление фасадных элементов', 'desc' =>'', 'uri' => 'gibka-metala', ],
+            ['priority' => 6,'name' => 'Изготовление фасонных элементов', 'desc' =>'', 'uri' => 'gibka-metala', ],
             ['priority' => 7,'name' => 'Монтаж электроосвещения', 'desc' =>'', 'uri' => 'electro-montazh', ],
             ['priority' => 8,'name' => 'Водоснабжение и водоотведение', 'desc' =>'', 'uri' => 'vodosnabzhenie', ],
             ['priority' => 9,'name' => 'Отделка помещений для вашего бизнеса', 'desc' =>'', 'uri' => 'otdelka-pomesheniy', ],
