@@ -47,8 +47,8 @@ export default{
                 <h2 class="section-title">Предварительный рассчет стоимости за услугу</h2>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
                 <div class="bg-red-dark p-3 p-md-5 rounded calc">
                     <div class="progress bg-transparent border border-light mb-4">
                         <div class="progress-bar bg-light" role="progressbar" :style="'width: '+ progValue +'%'"></div>
@@ -215,16 +215,16 @@ export default{
                                 </ul>
                             </div>
                             <div v-show="step == 6" key="6" id="st-6" class="position-absolute w-100">
-                                <p class="w-100 w-md-50">
+                                <p class="w-100">
                                     Для получения предварительного рассчета - нам необходимы контакты для обратной связи, пожалуйста введите имя и номер телефона, чтобы наш менеджер мог связаться с вами в ближайшее время
                                 </p>
-                                <div class="input-group w-100 w-md-50 mb-3">
+                                <div class="input-group mb-3">
                                     <input type="text" class="form-control" name="name" ref="client"  placeholder="Введите ваше имя" aria-label="Введите ваше имя" aria-describedby="name" v-model="formData.client.name">
                                     <span class="input-group-text" id="name">
                                         <i class="fa fa-user-o"></i>
                                     </span>
                                 </div>
-                                <div class="input-group w-100 w-md-50 mb-5 mb-md-3">
+                                <div class="input-group w-100 mb-5 mb-md-3">
                                     <input type="text" class="form-control" placeholder="Номер телефона" aria-label="Номер телефона" aria-describedby="tel" v-model="formData.client.tel" v-maska data-maska="+7 (###) ###-##-##">
                                     <span class="input-group-text" id="tel">
                                         <i class="fa fa-phone"></i>
@@ -255,6 +255,8 @@ export default{
 </template>
 
 <style lang="sass" scoped>
+.content-container
+    width: 50%
 .calc
     min-height: 450px
     transition: all .3s
