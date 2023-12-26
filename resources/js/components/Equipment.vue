@@ -41,7 +41,7 @@ export default{
 
 <template>
     <div class="row">
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-lg-4 mb-4 mb-lg-0">
             <ul class="equip-list">
                 <li v-for="item in equip" :key="item.key" class="py-2">
                     <button type="button" class="btn btn-outline-light w-100" 
@@ -53,7 +53,7 @@ export default{
                 </li>
             </ul>
         </div>
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-lg-8">
             <div ref="container" style="transition: all .1s;">
                 <transition-group
                     enter-active-class="animate__animated animate__fadeIn"

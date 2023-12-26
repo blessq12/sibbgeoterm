@@ -15,9 +15,9 @@ export default{
 <template>
     <div class="invisible position-fixed top-0 w-100 h-100 p-2 p-md-5" v-if="overlay" style="z-index: 20;">
         <div class="container h-100">
-            <div class="row row-cols justify-content-center h-100 align-items-center">
-                <div class="col text-center position-relative w-100 h-100">
-                    <img :src="current" alt="" class="position-relative visible" style="z-index: 25;max-width: 100%; height: 100%;">
+            <div class="row row-cols h-100 align-items-center">
+                <div class="col text-center position-relative w-100 h-100 justify-content-center align-items-center d-flex">
+                    <img :src="current" alt="" class="position-relative visible" style="z-index: 25;max-width: 100%; max-height: 100%;">
                 </div>
             </div>
         </div>

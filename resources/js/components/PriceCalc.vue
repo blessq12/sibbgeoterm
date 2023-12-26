@@ -48,7 +48,7 @@ export default{
             </div>
         </div>
         <div class="row rounded">
-            <div class="col-md-4 d-none d-md-block">
+            <div class="col-md-6 d-none d-md-block">
                 <div class="border border-light rounded p-3 h-100 d-flex align-items-center">
                     <div class="d-block">
                         <h4>
@@ -60,7 +60,7 @@ export default{
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-md-6">
                 <div class=" calc">
                     <div class="progress bg-transparent border border-light mb-4">
                         <div class="progress-bar bg-light" role="progressbar" :style="'width: '+ progValue +'%'"></div>
