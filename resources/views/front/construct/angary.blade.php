@@ -126,12 +126,17 @@
     <section>
         @php
             $images = [
-                (object)['id' => 1, 'path' => '//via.placeholder.com/512x512'],
-                (object)['id' => 2, 'path' => '//via.placeholder.com/512x512'],
-                (object)['id' => 3, 'path' => '//via.placeholder.com/512x512'],
-                (object)['id' => 4, 'path' => '//via.placeholder.com/512x512'],
-                (object)['id' => 5, 'path' => '//via.placeholder.com/512x512'],
-                (object)['id' => 6, 'path' => '//via.placeholder.com/512x512'],
+                (object)['id' => 1, 'path' => '/assets/images/angars/primeri/6.jpeg'],
+                (object)['id' => 2, 'path' => '/assets/images/angars/primeri/7.jpeg'],
+                (object)['id' => 3, 'path' => '/assets/images/angars/primeri/8.jpeg'],
+                (object)['id' => 4, 'path' => '/assets/images/angars/primeri/9.jpeg'],
+                (object)['id' => 5, 'path' => '/assets/images/angars/primeri/10.jpeg'],
+                (object)['id' => 6, 'path' => '/assets/images/angars/primeri/11.jpeg'],
+                (object)['id' => 7, 'path' => '/assets/images/angars/primeri/13.jpeg'],
+                (object)['id' => 8, 'path' => '/assets/images/angars/primeri/15.jpeg'],
+                (object)['id' => 9, 'path' => '/assets/images/angars/primeri/17.jpeg'],
+                (object)['id' => 10, 'path' => '/assets/images/angars/primeri/19.jpeg'],
+                (object)['id' => 11, 'path' => '/assets/images/angars/primeri/21.jpeg'],
             ]
         @endphp
         <page-slider
