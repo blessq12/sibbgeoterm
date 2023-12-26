@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="bg-red-dark rounded text-light p-5">
+                <div class="bg-red-dark rounded text-light p-3 p-md-5">
                     <div class="row align-items-center">
                         <div class="col-12 col-md-6">
                             <h3>Бурение в чистовых условиях</h3>
@@ -123,7 +123,7 @@
     @foreach ($videos as $video)
         <video-content 
             direction='{{ $video->direction }}'
-            class="mb-4" 
+            style="margin-bottom: 100px" 
             title='{{ $video->title }}' 
             text='{{ $video->text }}' 
             link='' 
