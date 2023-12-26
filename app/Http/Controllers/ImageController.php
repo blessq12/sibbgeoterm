@@ -26,7 +26,7 @@ class ImageController extends Controller
                 $image->delete();
             }
         }
-        $imageName = $slug->uri . $request->file('image')->getClientOriginalExtension();
+        $imageName = $slug->uri . '.' . $request->file('image')->getClientOriginalExtension();
         // image
         Image::make($request->file('image'))
         ->resize(1920, 1080, fn ($item) => $item->aspectRatio())
