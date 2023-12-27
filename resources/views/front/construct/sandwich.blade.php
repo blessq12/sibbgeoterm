@@ -180,6 +180,19 @@
         </div>
     </section>
     <section>
-        <angar-slider></angar-slider>
+        @php
+            $images = [
+                (object) ['id' => 1, 'path' => '/assets/images/sandwich/photo/2023-12-26 23.45.14.jpg']
+            ]
+        @endphp
+        <page-slider
+            title="Примеры чего то там"
+            subtitle="Здесь будут фотографии примерных примеров в примерах"
+            :images='@json($images)'
+        >
+            <div class="border border-light rounded h-100 d-flex align-items-center">
+                <h5>Пример пример пример пример</h5>
+            </div>
+        </page-slider>
     </section>
 @endsection
