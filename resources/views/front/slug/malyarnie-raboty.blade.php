@@ -143,32 +143,34 @@
             <div class="row">
                 @php
                     $faqs = [
-                        'col' => [
-                            (object) ['name' => '', 'text' => ''],
-                            (object) ['name' => '', 'text' => ''],
-                            (object) ['name' => '', 'text' => ''],
-                            (object) ['name' => '', 'text' => ''],
+                        [
+                            (object) ['uri' => 'f', 'name' => 'Сколько стоит покраска за квадратный метр?', 'text' => 'В Томске и Томской области средняя цена профессиональных покрасочных работ составляет 250 рублей за квадратный метр для стен и 300 рублей за квадратный метр для потолков. Это стоимость для окраски в два слоя поверхностей, которые находятся в достаточно хорошем состоянии и не требуют ремонта.'],
+                            (object) ['uri' => 's', 'name' => 'От чего зависит стоимость подготовки и окраски?', 'text' => 'Цена малярных работ в основном зависит от: Размер окрашиваемой области, Сколько раз красим, Необходимость стыковать разные цвета, Высота перегородок, легкость доступа, Укрывные работы, перемещение мебели, Нужно ли ремонтировать поверхность, Требуются ли штукатурные работы, Работа в нерабочее время, Утилизация мусора, уборка, Специальные инструменты, строительные леса'],
+                            (object) ['uri' => 't', 'name' => 'Сколько времени нужно на выполнение малярных работ?', 'text' => 'У каждого проекта свой график. В зависимости от объема подготовки, количества слоев, размера и доступности окрашиваемой площади покрасочные работы могут занять от двух дней до нескольких недель. Предварительный срок вы узнаете уже на первой встрече с оценщиком.'],
+                            (object) ['uri' => 'd', 'name' => 'Что входит в услуги по малярным работам?', 'text' => 'Наш подход включает: Укрываем пол, мебель защитной пленкой, Выравниваем плоскость штукатуркой, Заделываем дыры, трещины, устраняем пятна, шлифуем, грунтуем поверхности, Наносим составы высшего качества для равномерного покрытия, Уделяем пристальное внимание чистоте в рабочей зоне, Вместе с вами осматриваем обновленное пространство, чтобы услышать обратную связь'],
                         ],
-                        'col' => [
-                            (object) ['name' => '', 'text' => ''],
-                            (object) ['name' => '', 'text' => ''],
-                            (object) ['name' => '', 'text' => ''],
+                        [
+                            (object) ['uri' => 'zx', 'name' => 'Нужно ли мне заранее переставлять мебель?', 'text' => 'Мы защищаем мебель, полы, но хрупкие предметы и технику, которую сложно переместить, пожалуйста, вынесите до прибытия малярной бригады или предупредите нас до начала работ.'],
+                            (object) ['uri' => 'ewq', 'name' => 'Можете ли вы отремонтировать повреждения отделки?', 'text' => 'Да, ремонтируем поврежденные участки гипсокартона, трещины.'],
+                            (object) ['uri' => 'qw', 'name' => 'Какие материалы используете?', 'text' => 'Используем качественные продукты, которые служат долго, имеют слабый запах, хорошую укрывистость и сохнут быстрее. Если берете дешевые аналоги, то в итоге тратите больше из-за недолговечности таких покрытий, которые уже на следующий год надо перекрашивать.'],
                         ] 
                     ]
                 @endphp
                 @foreach ($faqs as $col)
                     <div class="col">
-                        <div class="accordion">
+                        <div class="accordion" id="bayan">
                             @foreach ($col as $qa)
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">
-                                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Accordion Item #1
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-{{ $qa->uri }}" aria-expanded="true" aria-controls="collapseOne">
+                                    {{ $qa->name }}
                                   </button>
                                 </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div id="faq-{{ $qa->uri }}" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#bayan">
                                   <div class="accordion-body">
-                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    <p>
+                                        {{ $qa->text }}
+                                    </p>
                                   </div>
                                 </div>
                               </div>
