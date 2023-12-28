@@ -57,7 +57,7 @@
                     ]
                 @endphp
                 @foreach ($prices as $item)    
-                    <div class="col mb-4 mb-md-0">
+                    <div class="col mb-4 mb-lg-0 ">
                         <div class="price">
                             <div class="bg-red-dark py-4 d-flex justify-content-center align-items-center rounded-top">
                                 <div class="d-block">
@@ -140,7 +140,7 @@
                     </p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row row-cols-1 row-cols-md-2">
                 @php
                     $faqs = [
                         [
@@ -162,7 +162,7 @@
                             @foreach ($col as $qa)
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">
-                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-{{ $qa->uri }}" aria-expanded="true" aria-controls="collapseOne">
+                                  <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#faq-{{ $qa->uri }}" aria-expanded="true" aria-controls="collapseOne">
                                     {{ $qa->name }}
                                   </button>
                                 </h2>
@@ -181,4 +181,30 @@
             </div>
     </section>
 
+    {{-- slider --}}
+    <section>
+        @php
+            $images = [
+                (object) ['id' => 1, 'path' => '//via.placeholder.com/512x512'],
+                (object) ['id' => 1, 'path' => '//via.placeholder.com/512x512'],
+                (object) ['id' => 1, 'path' => '//via.placeholder.com/512x512'],
+                (object) ['id' => 1, 'path' => '//via.placeholder.com/512x512'],
+                (object) ['id' => 1, 'path' => '//via.placeholder.com/512x512'],
+            ]
+        @endphp
+        <page-slider
+            title="Примеры работ"
+            subtitle=''
+            :images='@json($images)'
+        >
+            <div class="border border-light rounded p-3 h-100 d-flex align-items-center">
+                <div class="d-block">
+                    <h4>Мы опубликовали часть фотографий завершенных объектов для ознакомления</h4>
+                    <p class="text-red">
+                        Если у вас остались вопросы - свяжитесь с нами
+                    </p>
+                </div>
+            </div>
+        </page-slider>
+    </section>
 @endsection
