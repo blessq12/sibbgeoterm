@@ -102,7 +102,7 @@
                 @foreach ($wheres as $item)
                     
                     <div class="col p-0">
-                        <div class="bg-image w-100 position-relative p-3 d-flex align-items-end" style="min-height: 250px;background:url( {{ $item->image }} )">
+                        <div class="bg-image w-100 position-relative p-3 d-flex align-items-end" style="min-height: 300px;background:url( {{ $item->image }} )">
                             <div class="overlay position-absolute w-100 h-100 top-0" style="background: rgba(0,0,0,.6)"></div>
                             <h3 class="position-relative section-title">
                                 {{ $item->name }}
