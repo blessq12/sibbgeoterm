@@ -27,7 +27,7 @@
                     </p>
                 </div>
                 <div class="col">
-                    <div class="bg-image h-100 rounded w-100" style="background: url('/assets/images/vodosnabzhenie.jpeg')" style="min-height: 300px"></div>
+                    <div class="bg-image h-100 rounded w-100" style="background: url('/assets/images/vodosnabzhenie.jpeg');min-height: 300px"></div>
                 </div>
             </div>
         </div>
@@ -135,7 +135,7 @@
                     </ul>
                 </div>
                 <div class="col">
-                    <div class="bg-image w-100 h-100 rounded" style="background: url(/assets/images/montazh.jpeg)" style="min-height: 300px"></div>
+                    <div class="bg-image w-100 h-100 rounded" style="background: url(/assets/images/montazh.jpeg);min-height: 300px"></div>
                 </div>
             </div>
         </div>
