@@ -12774,3 +12774,12 @@
 127.0.0.1 - - [30/Dec/2023:23:02:40 +0700] "GET /assets/favicon/site.webmanifest HTTP/1.1" 200 576
 127.0.0.1 - - [30/Dec/2023:23:04:59 +0700] "GET /assets/images/peskostryi/plesen.jpeg HTTP/1.1" 304 -
 127.0.0.1 - - [30/Dec/2023:23:05:01 +0700] "GET /assets/images/peskostryi/shtukaturka.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [30/Dec/2023:23:06:31 +0700] "GET /slug/peskostyinaya-obrabotka HTTP/1.1" 200 33086
+127.0.0.1 - - [30/Dec/2023:23:06:31 +0700] "GET /build/assets/app-a3e99c4d.css HTTP/1.1" 200 8039
+127.0.0.1 - - [30/Dec/2023:23:06:31 +0700] "GET /build/assets/app-c79d8bf1.js HTTP/1.1" 200 302033
+127.0.0.1 - - [30/Dec/2023:23:06:31 +0700] "GET /assets/favicon/site.webmanifest HTTP/1.1" 200 576
+127.0.0.1 - - [30/Dec/2023:23:06:31 +0700] "GET /build/assets/app-085d7ab1.css HTTP/1.1" 200 4747
+127.0.0.1 - - [30/Dec/2023:23:06:32 +0700] "GET /build/assets/RoadRadio_Bold-d7cea1c7.woff2 HTTP/1.1" 200 24476
+127.0.0.1 - - [30/Dec/2023:23:06:36 +0700] "GET /slug/peskostyinaya-obrabotka HTTP/1.1" 200 33086
+127.0.0.1 - - [30/Dec/2023:23:06:36 +0700] "GET /assets/favicon/site.webmanifest HTTP/1.1" 200 576
+127.0.0.1 - - [30/Dec/2023:23:06:36 +0700] "GET /build/assets/RoadRadio_Bold-d7cea1c7.woff2 HTTP/1.1" 304 -
