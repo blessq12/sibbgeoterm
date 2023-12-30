@@ -11,7 +11,7 @@
                     </h2>
                 </div>
             </div>
-            <div class="row">
+            <div class="row row-cols-1 row-cols-md-2">
                 <div class="col">
                     <p>
                         Сибгеотерм оказывает услуги по системам водоснабжения и воодоотведения "под ключ".
@@ -27,7 +27,7 @@
                     </p>
                 </div>
                 <div class="col">
-                    <div class="bg-image h-100 rounded w-100" style="background: url('/assets/images/vodosnabzhenie.jpeg')"></div>
+                    <div class="bg-image h-100 rounded w-100" style="background: url('/assets/images/vodosnabzhenie.jpeg')" style="min-height: 300px"></div>
                 </div>
             </div>
         </div>
@@ -135,7 +135,7 @@
                     </ul>
                 </div>
                 <div class="col">
-                    <div class="bg-image w-100 h-100 rounded" style="background: url(/assets/images/montazh.jpeg)"></div>
+                    <div class="bg-image w-100 h-100 rounded" style="background: url(/assets/images/montazh.jpeg)" style="min-height: 300px"></div>
                 </div>
             </div>
         </div>
