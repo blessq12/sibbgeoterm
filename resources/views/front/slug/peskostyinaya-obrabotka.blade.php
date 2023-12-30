@@ -43,4 +43,100 @@
             :items='@json($items)'
         ></pesko-strui>
     </section>
+
+    <section>
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col">
+                    <h2 class="section-title">
+                        Цены на услуги пескоструйной обработки
+                    </h2>
+                    <p>
+                        Цены могут отличаться в зависимости от конкреттного случая.
+                    </p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3">
+                @php
+                    $prices = [
+                        (object) ['name' => 'Очистка древесины', 'price' => '180', 'image' => '//via.placeholder.com/128x128'],
+                        (object) ['name' => 'Очистка кирпича', 'price' => '150', 'image' => '//via.placeholder.com/128x128'],
+                        (object) ['name' => 'Очистка бетона', 'price' => '180', 'image' => '//via.placeholder.com/128x128'],
+                        (object) ['name' => 'Очистка металла', 'price' => '280', 'image' => '//via.placeholder.com/128x128'],
+                        (object) ['name' => 'Альпинисты', 'price' => '280', 'image' => '//via.placeholder.com/128x128'],
+                        (object) ['name' => 'Покраска сооружений', 'price' => '50', 'image' => '//via.placeholder.com/128x128'],
+                    ]
+                @endphp
+                @foreach ($prices as $p)
+                    <div class="col mb-4">
+                        <div class="border border-light p-3 rounded d-flex align-items-center justify-content-between">
+                            <div class="d-block">
+                                <h5> {{ $p->name }} </h5>
+                                <span class="roadradio">
+                                    Цена: от 
+                                        <span class="fs-4 text-red">
+                                            {{ $p->price }} руб/м2
+                                        </span>
+                                </span>
+                            </div>
+                            <img src="{{ $p->image }}" alt="{{ $p->name }}" class="img-fluid" style="margin-left: 12px">
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col">
+                    <h2 class="section-title">
+                        С нами <span class="text-red">выгодно</span> и <span class="text-red">комфортно</span> работать
+                    </h2>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3">
+                @php
+                    $advs = [
+                        (object) ['title' => 'Полный комплекс работ', 'text' => 'Мы способны взять под ключ: пескоструйную обработку, промышленный альпинизм, покрасочные работы', 'image' => '//via.placeholder.com/128x128'],
+                        (object) ['title' => 'Оптимальная стоимость', 'text' => 'Низкие расценки за счёт автоматизации производства. Действует система скидок', 'image' => '//via.placeholder.com/128x128'],
+                        (object) ['title' => 'Срочный выезд', 'text' => 'Готовы приехать в день оставления заявки или на следующий день. Выполним работу в сжатые сроки!', 'image' => '//via.placeholder.com/128x128'],
+                    ]
+                @endphp
+                @foreach ($advs as $a)
+                    <div class="col mb-4 mb-md-0">
+                        <div class="border border-danger p-3 text-center rounded h-100">
+                            <img src="{{ $a->image }}" alt="{{ $a->title }}" class="img-fluid mb-4">
+                            <h4>{{ $a->title }}</h4>
+                            <p class="mb-0">{{ $a->text }}</p>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
+    <section>
+        @php
+            $images = [
+                (object) ['id' => 1, 'path' => '/assets/images/peskostryi/bitum.jpeg'],
+                (object) ['id' => 2, 'path' => '/assets/images/peskostryi/lpk.jpeg'],
+                (object) ['id' => 3, 'path' => '/assets/images/peskostryi/nalet.jpeg'],
+                (object) ['id' => 4, 'path' => '/assets/images/peskostryi/pozhar.jpeg'],
+                (object) ['id' => 5, 'path' => '/assets/images/peskostryi/cement.jpeg'],
+            ]
+        @endphp
+        <page-slider
+            title='Выполненные заказы'
+            subtitle=''
+            :images='@json($images)'
+        >
+            <div class="border border-light rounded p-3 d-flex align-items-center h-100">
+                <h4>
+                    Заказы клиентов
+                </h4>
+            </div>
+        </page-slider>
+    </section>
 @endsection
