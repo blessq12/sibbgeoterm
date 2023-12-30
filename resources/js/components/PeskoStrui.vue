@@ -2,7 +2,7 @@
 export default{
     mounted(){
         this.swidth = window.innerWidth
-        this.$refs.container.style.height = this.$refs['item-' + this.current] + 'px'
+        this.$refs.container.style.height = this.$refs.item[0].offsetHeight + 'px'
     },
     props:{
         title: String,
@@ -15,7 +15,9 @@ export default{
     }),
     watch:{
         current(val){
-            this.$refs.container.style.height = this.$refs['item-'+this.current] + 'px'
+            setTimeout(() => {
+                this.$refs.container.style.height = this.$refs.item[val].offsetHeight + 'px'
+            }, 100);
         }
     }
 }
@@ -53,10 +55,10 @@ export default{
                         leave-active-class="animate__animated animate__fadeOut"
                     >
                         <div 
-                            class="position-absolute w-100" 
+                            class="position-absolute w-100"
                             v-show="items.indexOf(e) == current" 
-                            v-for="e in items" :key="'item-' + e.id"
-                            :ref="'item-' + e.id"
+                            v-for="e in items" :key="e.id"
+                            ref="item"
                             >
                             <div class="bg-image rounded mb-4" :style="'background:url('+ e.image +'); min-height: 200px'"></div>
                             <h4><span class="text-red">: </span> {{ e.title }} </h4>
