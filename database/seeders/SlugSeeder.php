@@ -23,7 +23,7 @@ class SlugSeeder extends Seeder
             ['priority' => 6,'name' => 'Изготовление фасонных элементов', 'desc' =>'', 'uri' => 'gibka-metala', ],
             ['priority' => 7,'name' => 'Монтаж электроосвещения', 'desc' =>'', 'uri' => 'electro-montazh', ],
             ['priority' => 8,'name' => 'Водоснабжение и водоотведение', 'desc' =>'', 'uri' => 'vodosnabzhenie', ],
-            ['priority' => 9,'name' => 'Отделка помещений для вашего бизнеса', 'desc' =>'', 'uri' => 'otdelka-pomesheniy', ],
+            ['priority' => 9,'name' => 'Отделка помещений для вашего бизнеса', 'desc' =>'У нас можно заказать любой вид ремонтных работ, а также разработку дизайн-проекта помещений. Все работы выполняются под ключ – от замера до сдачи объекта заказчику.', 'uri' => 'otdelka-pomesheniy', ],
             
         ]);
     }
