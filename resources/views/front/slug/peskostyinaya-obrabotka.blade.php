@@ -72,9 +72,9 @@
                         <div class="border border-light p-3 rounded d-flex align-items-center justify-content-between">
                             <div class="d-block">
                                 <h5> {{ $p->name }} </h5>
-                                <span class="roadradio">
-                                    Цена: от 
-                                        <span class="fs-4 text-red">
+                                <span class="roadradio fs-6">
+                                    Цена <br>от 
+                                        <span class="text-red">
                                             {{ $p->price }} руб/м2
                                         </span>
                                 </span>
@@ -118,19 +118,10 @@
     </section>
 
     <section>
-        @php
-            $images = [
-                (object) ['id' => 1, 'path' => '/assets/images/peskostryi/bitum.jpeg'],
-                (object) ['id' => 2, 'path' => '/assets/images/peskostryi/lpk.jpeg'],
-                (object) ['id' => 3, 'path' => '/assets/images/peskostryi/nalet.jpeg'],
-                (object) ['id' => 4, 'path' => '/assets/images/peskostryi/pozhar.jpeg'],
-                (object) ['id' => 5, 'path' => '/assets/images/peskostryi/cement.jpeg'],
-            ]
-        @endphp
         <page-slider
             title='Выполненные заказы'
             subtitle=''
-            :images='@json($images)'
+            :images='@json($slug->portfolioImages)'
         >
             <div class="border border-light rounded p-3 d-flex align-items-center h-100">
                 <h4>

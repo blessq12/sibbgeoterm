@@ -115,7 +115,7 @@
         <page-slider
             title='Портфолио'
             subtitle=''
-            :images='@json([])'
+            :images='@json($slug->portfolioImages)'
         >
             <div class="border border-light p-3 d-flex align-items-center rounded h-100">
                 <div class="d-block">

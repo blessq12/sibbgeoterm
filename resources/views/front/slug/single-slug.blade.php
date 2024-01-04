@@ -9,9 +9,9 @@
         :slug="$slug"
     >
     
-        <button type="button" class="btn btn-outline-light btn-lg">
+        {{-- <button type="button" class="btn btn-outline-light btn-lg">
             Узнать стоимость 
-        </button>
+        </button> --}}
 
     </x-front.slug-header>
     

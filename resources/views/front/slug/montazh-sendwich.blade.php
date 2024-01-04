@@ -52,7 +52,7 @@
             @foreach ($factors as $factor)
                 
             <div class="col mb-4">
-                <div class="border border-light p-4 rounded d-flex align-items-center" style="min-height: 180px">
+                <div class="border border-light p-4 rounded d-flex align-items-center h-100" style="min-height: 180px">
                     <div class="d-flex align-items-center justify-content-center" style="padding-right: 24px">
                         <i class="{{$factor->icon}} fa-3x"></i>
                     </div>
@@ -136,7 +136,7 @@
         </div>
         <div class="row row-cols-1 row-cols-md-2">
             <div class="col mb-4 mb-md-0">
-                <h5>Возьмём на себя весь цикл монтажных работ:</h5>
+                <h5 class="section-title">Возьмём на себя весь цикл монтажных работ:</h5>
                 @php
                     $adlist = [
                         'поможем с выбором завода изготовителя;',
@@ -153,7 +153,7 @@
                 </ul>
             </div>
             <div class="col">
-                <h5>При заключении договора подряда Заказчик получает:</h5>
+                <h5 class="section-title">При заключении договора подряда Заказчик получает:</h5>
                 @php
                     $adlist2 = [
                         'фиксированную смету;',
@@ -171,5 +171,21 @@
             </div>
         </div>
     </div>
+</section>
+
+<section>
+    <page-slider
+        title="Выполненные заказы"
+        subtitle=""
+        :images='@json($slug->portfolioImages)'
+    >
+        <div class="border border-light rounded h-100 p-3 d-flex align-items-center">
+            <div class="d-block">
+                <h4>
+                    Работы по монтажу панелей
+                </h4>
+            </div>
+        </div>
+    </page-slider>
 </section>
 @endsection

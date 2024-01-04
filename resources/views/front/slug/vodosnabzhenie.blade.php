@@ -140,4 +140,18 @@
             </div>
         </div>
     </section>
+
+    <section>
+        <page-slider
+            title=""
+            subtitle=""
+            :images='@json($slug->portfolioImages)'
+        >
+            <div class="border border-light rounded p-3 h-100 d-flex-align-items-center">
+                <div class="d-block">
+                    <h4>Выполненные работы</h4>
+                </div>
+            </div>
+        </page-slider>
+    </section>
 @endsection

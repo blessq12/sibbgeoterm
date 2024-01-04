@@ -137,21 +137,10 @@
     </section>
 
     <section>
-        @php
-            $images = [
-                (object) ['id' => 1, 'path' => '/assets/images/fason/1.jpeg'],
-                (object) ['id' => 2, 'path' => '/assets/images/fason/2.jpeg'],
-                (object) ['id' => 3, 'path' => '/assets/images/fason/3.jpeg'],
-                (object) ['id' => 4, 'path' => '/assets/images/fason/4.jpeg'],
-                (object) ['id' => 5, 'path' => '/assets/images/fason/5.jpeg'],
-                (object) ['id' => 6, 'path' => '/assets/images/fason/6.jpeg'],
-                (object) ['id' => 7, 'path' => '/assets/images/fason/7.jpeg'],
-            ]
-        @endphp
         <page-slider
             title="Примеры готовой продукции"
             subtitle=''
-            :images='@json($images)'
+            :images='@json($slug->portfolioImages)'
         >
             <div class="border border-light p-3 rounded d-flex align-items-center h-100">
                 <div class="d-block">
