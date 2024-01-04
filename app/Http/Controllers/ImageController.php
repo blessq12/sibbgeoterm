@@ -17,7 +17,7 @@ class ImageController extends Controller
         }
 
         $slug = Slug::findOrFail($request->slug_id);
-        if (!$slug->images->isEmpty()){
+        if (!$slug->images->where('type', 'image')->isEmpty()){
             File::delete($slug->images()->where('type', 'image')->first()->path);
             File::delete($slug->images()->where('type', 'thumb')->first()->path);
         }

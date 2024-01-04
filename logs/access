@@ -14716,3 +14716,8 @@
 127.0.0.1 - - [04/Jan/2024:15:35:25 +0700] "GET /assets/images/logo.png HTTP/1.1" 304 -
 127.0.0.1 - - [04/Jan/2024:15:35:25 +0700] "GET /assets/favicon/site.webmanifest HTTP/1.1" 200 576
 127.0.0.1 - - [04/Jan/2024:15:35:25 +0700] "GET /assets/images/peskostryi/rzhavchina.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [04/Jan/2024:15:40:59 +0700] "POST /crm/image/upload HTTP/1.1" 500 1137443
+127.0.0.1 - - [04/Jan/2024:15:41:50 +0700] "POST /crm/image/upload HTTP/1.1" 302 350
+127.0.0.1 - - [04/Jan/2024:15:41:52 +0700] "GET /crm/slugs/4 HTTP/1.1" 200 7532
+127.0.0.1 - - [04/Jan/2024:15:41:52 +0700] "GET /assets/uploads/slugs/thumb-fasadnie-raboty.jpeg HTTP/1.1" 200 29214
+127.0.0.1 - - [04/Jan/2024:15:41:52 +0700] "GET /assets/uploads/portfolio/1704355610-1909.jpeg HTTP/1.1" 304 -
