@@ -16,7 +16,7 @@
                 <div class="col-2">
                     <x-crm.sidebar></x-crm.sidebar>
                 </div>
-                <div class="col-10 pt-4">
+                <div class="col-10 pt-4" style="height: calc( 100vh - 70px ); overflow: auto">
                     <div class="row mb-4">
                         <div class="col-12">
                             <h3>@yield('title')</h3>

@@ -1,6 +1,6 @@
 @extends('layouts.crm')
 
-@section('title', 'Услугa ' . $slug->name )
+@section('title', $slug->name )
 
 @section('content')
     @if (session('success'))
@@ -54,12 +54,37 @@
                     </form>
                 </div>
             </div>
-            <div class="row">
+            <div class="row mb-4">
                 <div class="col-12">
-                    @if (!$slug->images->isEmpty())
-                        <img src="{{ $slug->thumb->first()->path }}" alt="" class="img-fluid w-50">
+                    @if (!$slug->thumb->isEmpty())
+                        <img src="{{ $slug->thumb->first()->path }}" alt="{{ $slug->name }}" class="img-fluid w-50">
                     @else
                         <p>Нет загруженных фото для услуги</p>
+                    @endif                    
+                </div>
+            </div>
+            <h5>Портфолио</h5>
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <form action="{{ route( 'crm.image.portfolio-image' , $slug->id) }}" method="post" enctype="multipart/form-data">
+                        @csrf
+                        <div class="input-group">
+                            <input type="file" class="form-control" id='image' name="images[]" multiple required>
+                            <button class="btn btn-primary" type="submit">Загрузить фотографию</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12">
+                    @if ($slug->portfolioImages->isEmpty())
+                        <p>Нет фотографий портфолио</p>
+                    @else
+                        <div class="row row-cols-4 g-2">
+                            @foreach ($slug->portfolioImages as $img)
+                                <div class="col mb-2">
+                                    <div class="bg-image w-100 h-100 rounded" style="background: url( {{ $img->path }} ); min-height: 100px"></div>
+                                </div>
+                            @endforeach
+                        </div>
                     @endif
                 </div>
             </div>

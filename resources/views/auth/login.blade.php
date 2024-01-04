@@ -5,7 +5,7 @@
     <div class="wrap">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-8 col-lg-4">
+                <div class="col-12 col-md-8 col-lg-6">
                     <h4>Авторизация</h4>
                     @if (session('created'))
                         <div class="alert alert-success">

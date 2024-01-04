@@ -185,19 +185,10 @@
 
     {{-- slider --}}
     <section>
-        @php
-            $images = [
-                (object) ['id' => 1, 'path' => '//via.placeholder.com/512x512'],
-                (object) ['id' => 1, 'path' => '//via.placeholder.com/512x512'],
-                (object) ['id' => 1, 'path' => '//via.placeholder.com/512x512'],
-                (object) ['id' => 1, 'path' => '//via.placeholder.com/512x512'],
-                (object) ['id' => 1, 'path' => '//via.placeholder.com/512x512'],
-            ]
-        @endphp
         <page-slider
             title="Примеры работ"
             subtitle=''
-            :images='@json($images)'
+            :images='@json($slug->portfolioImages)'
         >
             <div class="border border-light rounded p-3 h-100 d-flex align-items-center">
                 <div class="d-block">

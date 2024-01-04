@@ -46,6 +46,10 @@ Route::middleware('auth')->group(function(){
         Route::resource('slugs', SlugController::class);
 
         Route::controller(ImageController::class)->name('image.')->prefix('image')->group(function(){
+            // portfolio
+            Route::post('/{id}/portfolio/add', 'slugPortfolio')->name('portfolio-image');
+            Route::delete('/{id}/portfolio/delete', 'deletePortfolioImage')->name('delete-portfolio-image');
+            // image
             Route::post('/upload', 'uploadSlugImage')->name('upload-slug-image');
             Route::delete('/delete/{id}', 'deleteImage')->name('delete-image');
         });

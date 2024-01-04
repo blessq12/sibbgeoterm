@@ -133,28 +133,10 @@
 </section>
 
 <section>
-    @php
-        $images = [
-            (object)['id' => 1, 'path' => '/assets/images/almaz/1.jpeg'],
-            (object)['id' => 2, 'path' => '/assets/images/almaz/2.jpeg'],
-            (object)['id' => 3, 'path' => '/assets/images/almaz/3.jpeg'],
-            (object)['id' => 4, 'path' => '/assets/images/almaz/4.jpeg'],
-            (object)['id' => 5, 'path' => '/assets/images/almaz/5.jpeg'],
-            (object)['id' => 6, 'path' => '/assets/images/almaz/6.jpeg'],
-            (object)['id' => 7, 'path' => '/assets/images/almaz/7.jpeg'],
-            (object)['id' => 8, 'path' => '/assets/images/almaz/8.jpeg'],
-            (object)['id' => 9, 'path' => '/assets/images/almaz/9.jpeg'],
-            (object)['id' => 10, 'path' => '/assets/images/almaz/10.jpeg'],
-            (object)['id' => 11, 'path' => '/assets/images/almaz/11.jpeg'],
-            (object)['id' => 12, 'path' => '/assets/images/almaz/12.jpeg'],
-            (object)['id' => 13, 'path' => '/assets/images/almaz/13.jpeg'],
-            (object)['id' => 14, 'path' => '/assets/images/almaz/14.jpeg'],
-        ]
-    @endphp
     <page-slider 
         title="Примеры работ"
         subtitle="Ниже представлены некоторые из наших завершенных заказов чтобы было понимание результатов"
-        :images='@json($images)'
+        :images='@json($slug->portfolioImages)'
     >
         <div class="d-flex align-items-center h-100 border rounded border-light p-3">
             <div class="d-block">

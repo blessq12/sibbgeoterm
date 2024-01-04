@@ -24,4 +24,8 @@ class Slug extends Model
     public function image(){
         return $this->images()->where('type', 'image');
     }
+
+    public function portfolioImages(){
+        return $this->images()->where('type', 'portfolio');
+    }
 }

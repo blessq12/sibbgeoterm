@@ -21,8 +21,8 @@
                 </div>
                 <div class="col">
                     <p>
-                        В нашем ассортименте представлены разнообразные модели светильников, обеспечивающие оптимальное освещение для любых помещений. 
-                        Гарантируем высокое качество нашей продукции и профессиональный подход к выполнению каждого заказа. 
+                        Мы поможем подобрать оптимальные осветиттельные приборы потолочного или настенного крепления для обеспечивающия оптимального освещения в любых помещениях. 
+                        Мы сотрудничеаем с потавщиками напрямую, что гарантирует безукорзинтенное качество продукции и профессиональный подход к выполнению каждого заказа. 
                         Мы стремимся к тому, чтобы каждый наш клиент остался доволен результатом и получил качественное освещение для своего объекта.
                     </p>
                 </div>
@@ -96,7 +96,7 @@
                     </h2>
                 </div>
             </div>
-            <div class="row row-cols-2 row-cols-md-2 g-0">
+            <div class="row row-cols-2 row-cols-md-3">
                 @php
                     $wheres = [
                         (object) ['name' => 'ОФИСЫ', 'image' => 'https://ledalen.ru/thumb/2/jLYPwSBfcC_WdA56WYIWLw/440c362/d/montazh_osveshcheniya_ofisov.jpg'],
@@ -104,7 +104,6 @@
                         (object) ['name' => 'ПОЛИКЛИНИКИ', 'image' => 'https://ledalen.ru/thumb/2/rgzx5e18KTH1bLs6k65TYg/440c362/d/montazh_osveshcheniya_gorodskih_poliklinik.jpg'],
                         (object) ['name' => 'ШКОЛЫ', 'image' => 'https://ledalen.ru/thumb/2/Fs8obVTCnBX55qyeTnSAwg/440c362/d/montazh_osveshcheniya_shkol.jpg'],
                         (object) ['name' => 'ДЕТСКИЕ САДЫ', 'image' => 'https://ledalen.ru/thumb/2/_7kREOUJ1FRyQsb9Z4ZGJA/440c362/d/montazh_osveshcheniya_detskogo_sada.jpg'],
-                        (object) ['name' => 'КОВОРКИНГ', 'image' => 'https://ledalen.ru/thumb/2/0CDWuCCgJ_xoOqhGKM93pQ/440c362/d/montazh_osveshcheniya_kovorkinga.jpg'],
                         (object) ['name' => 'РЕСТОРАНЫ', 'image' => 'https://ledalen.ru/thumb/2/ULWIClHPgR5qS1ynsyxJDg/440c362/d/montazh_osveshcheniya_restoranov.jpg'],
                         (object) ['name' => 'АВТОСАЛОНЫ', 'image' => 'https://ledalen.ru/thumb/2/Btb5W7u9RJtyMB1cln3-LQ/440c362/d/montazh_osveshcheniya_avtosalonov.jpg'],
                         (object) ['name' => 'САЛОНЫ КРАСОТЫ', 'image' => 'https://ledalen.ru/thumb/2/tALJWxUFodGa1KiuJn2dCQ/440c362/d/montazh_osveshcheniya_salonov_krasoty.jpg'],
@@ -113,8 +112,8 @@
                 @endphp
                 @foreach ($wheres as $item)
                     
-                    <div class="col p-0">
-                        <div class="bg-image w-100 position-relative p-3 d-flex align-items-end" style="min-height: 300px;background:url( {{ $item->image }} )">
+                    <div class="col mb-4">
+                        <div class="bg-image w-100 position-relative rounded p-3 d-flex align-items-end" style="min-height: 300px;background:url( {{ $item->image }} )">
                             <div class="overlay position-absolute w-100 h-100 top-0" style="background: rgba(0,0,0,.6)"></div>
                             <h3 class="position-relative section-title">
                                 {{ $item->name }}

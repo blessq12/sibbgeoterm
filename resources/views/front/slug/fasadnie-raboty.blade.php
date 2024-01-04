@@ -106,12 +106,12 @@
                 @endphp
                     @foreach ($slugs as $item)
                         <div class="col mb-4">
-                            <div class="position-relative rounded p-3 h-100 d-flex align-items-end overflow-hidden" style="min-height: 250px">
-                                <img src="{{ $item->image }}" alt="" class="img-fluid position-absolute" style="top: 0; left: 0">
+                            <div class="position-relative rounded p-3 h-100 d-flex align-items-end overflow-hidden" style="min-height: 200px">
+                                <img src="{{ $item->image }}" alt="" class="img-fluid position-absolute h-100 w-100" style="top: 0; left: 0%;">
                                 <div class="overlay"></div>
                                 <div class="d-flex align-items-center justify-content-between position-relative">
-                                    <h5 class="w-50">{{ $item->name }}</h5>
-                                    <p class="mb-0" style="max-width: 60%; font-size: .8rem; font-weight: 200">{{ $item->desc }}</p>
+                                    <h5 class="w-50 fs-6">{{ $item->name }}</h5>
+                                    <p class="mb-0" style="max-width: 60%; font-size: .8rem; font-weight: 200; padding-left:12px">{{ $item->desc }}</p>
                                 </div>
                             </div>
                         </div>
@@ -172,4 +172,21 @@
             </div>
         </div>
     </section>
+
+    <section>
+        <page-slider
+            title="Выполненные заказы"
+            subtitle=""
+            :images='@json($slug->portfolioImages)'
+        >
+            <div class="border border-light rounded p-3 d-flex align-items-center h-100">
+                <div class="d-block">
+                    <h4>
+                        Завершенные заказы по фасадным работам
+                    </h4>
+                </div>
+            </div>
+        </page-slider>
+    </section>
+
 @endsection
